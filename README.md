@@ -1,2 +1,2 @@
 # UPOBYE
-Aplicación de gestión de despidos
+Aplicación de gestión de despidos 
