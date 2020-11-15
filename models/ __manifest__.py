@@ -1,10 +1,10 @@
 # -*-coding: utf-8 -*-
 
-{'name': "gym",
-'summary': """Gestion del modulo Gym""",
+{'name': "UPOBYE",
+'summary': """Gestion del modulo UPOBYE""",
 'description': """RRRHH,
  despidos, bajas, etc""",
- 'author': "TSI -UPO",
+ 'author': "Grupo 2",
  'author': "grupo 2",
  'category': 'Uncategorized',
  'version': '0.1',
