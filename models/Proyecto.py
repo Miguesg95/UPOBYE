@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+=======
+>>>>>>> Stashed changes
 from odoo import models, fields, api
 
 class proyecto(models.Model):
