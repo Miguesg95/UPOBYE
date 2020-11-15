@@ -1,0 +1,28 @@
+<odoo>
+  <record id="sector_form_view" model="ir.ui.view">
+    <field name="name">upobye.sector.form</field>
+    <field name="descripcion">upobye-.sector</field>
+      <form string="Sectores">
+        <sheet layout="auto">
+          <group>
+            <field name="nombre_sector" />
+            <field name="descripcion_sector" />
+            <field name="sector" widget="many2many" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="sector_tree_view" model="ir.ui.view">
+    <field name="name">upobye.sector.tree</field>
+    <field name="model">upobye-.sector</field>
+      <tree string="Sectores">
+        <field name="nombre_proyecto" />
+          <field name="descripcion_sector" />
+           <field name="sector" widget="many2many" />
+      </tree>
+    </field>
+  </record>
+
+</odoo>

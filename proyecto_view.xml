@@ -1,0 +1,30 @@
+<odoo>
+  <record id="proyecto_form_view" model="ir.ui.view">
+    <field name="name">upobye.proyecto.form</field>
+    <field name="descripcion">upobye-.proyecto</field>
+      <form string="Proyectos">
+        <sheet layout="auto">
+          <group>
+            <field name="nombre_proyecto" />
+            <field name="descripcion_proyecto" />
+            <field name="sectores"/>
+            <field name="proyecto" widget="many2many" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="proyecto_tree_view" model="ir.ui.view">
+    <field name="name">upobye.proyecto.tree</field>
+    <field name="model">upobye-.proyecto</field>
+      <tree string="Proyectos">
+        <field name="nombre_proyecto" />
+        <field name="descripcion_proyecto" />
+        <field name="sectores"/>
+        <field name="proyecto" widget="many2many" />
+      </tree>
+    </field>
+  </record>
+
+</odoo>
