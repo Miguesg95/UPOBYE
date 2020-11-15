@@ -1,0 +1,16 @@
+
+<odoo>
+    <record id="proyecto" model="UPOBYE.proyecto">
+        <field name="nombre">Proyecto0</field>
+        <field name="descripcion">Esta es la descripción para 
+        el proyecto0</field>
+        <field name="sector">Agrario</field>
+    </record>
+    
+    <record id="sector" model="UPOBYE.sector">
+        <field name="nombre">Sector0</field>
+        <field name="descripcion">Esta es la descripción para 
+        el sector0</field>
+    </record>
+
+</odoo>
