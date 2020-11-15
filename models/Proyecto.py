@@ -1,8 +1,11 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 # -*- coding: utf-8 -*-
 =======
 >>>>>>> main
 
+=======
+>>>>>>> Stashed changes
 from odoo import models, fields, api
 
 class proyecto(models.Model):
