@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="despidos_list_action" model="ir.actions.act_window">
+      <field name="name">Despidos</field>
+       <field name="name">TipoDespido</field>
+        <field name="res_model">despidos.Despidos</field>
+        <field name="res_model">despidos.TipoDespido</field>
+      <field name="view_model">tree,form/field>
+       <field name="help" type="html">
+     <p class="o_view_nocontent_smiling_face">Create the first class</p>
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="TipoDespido" id="main_TipoDespido_menu" groups="group_UPOBYE_manager"/>
+
+    <!-- menu categories -->
+
+    
+    <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" groups="group_UPOBYE_manager" parent="main_UPOBYE_menu"/>
+
+    <!-- actions -->
+
+
+    <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" parent="UPOBYE_TipoDespido" groups="group_UPOBYE_manager"
+              action="UPOBYE_list_action"/>
+
+  </data>
+</odoo>
