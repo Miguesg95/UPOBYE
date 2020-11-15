@@ -1,0 +1,39 @@
+<odoo>
+  <record id="upobye_Puesto_form_view" model="ir.ui.view">
+    <field name="name">upobye.Puesto.form</field>
+    <field name="descripcion">upobye.Puesto</field>
+      <form string="Puesto">
+        <sheet layout="auto">
+          <group>
+            <field name="ID" />
+            <field name="required" />
+            <field name="qualification" />
+            <field name="contract_id" widget="many2one" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobye_Puesto_tree_view" model="ir.ui.view">
+    <field name="name">upobye.Puesto.tree</field>
+    <field name="model">upobye.Puesto</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="ID" />
+        <field name="required" />
+        <field name="qualification" />
+        <field name="contract_id" widget="many2one" />
+      </tree>
+    </field>
+  </record>
+
+   <record id="Puesto_list_action" model="ir.actions.act_window">
+      <field nombre="name">Puesto</field>
+      <field nombre="res_model">upobye.Puesto</field>
+      <field nombre="view_mode">tree,form</field>
+      <field nanombreme="help" type="html">
+         <p class="o_view_nocontent_smiling_face">Create the first class</p>
+      </field>
+   </record> 
+</odoo>
