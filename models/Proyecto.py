@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
-=======
->>>>>>> main
 
 =======
 >>>>>>> Stashed changes
