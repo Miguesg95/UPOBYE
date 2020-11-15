@@ -1,6 +1,6 @@
 from odoo import models, fields, api
 
-def proyecto(models.Model)
+class proyecto(models.Model):
     _nombre = 'upobye.proyecto'
     _descripcion = 'upobye.proyecto'
 
