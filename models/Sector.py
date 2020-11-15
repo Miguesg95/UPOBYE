@@ -1,6 +1,7 @@
+
 from odoo import models, fields, api
 
-def sector(models.Model)
+class sector(models.Model):
     _nombre = 'upobye.sector'
     _descripcion = 'upobye.sector'
 
