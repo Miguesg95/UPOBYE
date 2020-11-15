@@ -27,4 +27,11 @@
     </field>
   </record>
 
+  <record id="act_nuevo_proyecto" model="ir.actions.act_window">
+			<field name="name">Nuevo proyecto</field>
+			<field name="res_model">upobye.proyecto</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
 </odoo>
