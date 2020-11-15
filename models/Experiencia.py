@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+from odoo import models, fields, api
 class Experiencia (models.Model):    
 
     nombre = fields.Char(string="Nombre",required=True,help="Nombre de la ocupación que desea acreditar")
