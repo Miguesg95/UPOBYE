@@ -1,5 +1,31 @@
 <odoo>
-   <record id="Idioma_list_action" model="ir.actions.act_window">
+  <record id="idioma_form_view" model="ir.ui.view">
+    <field name="name">upobye.sector.form</field>
+    <field name="descripcion">upobye-.idioma</field>
+      <form string="Idiomas">
+        <sheet layout="auto">
+          <group>
+            <field name="nombre" />
+            <field name="certificacion" />
+            <field name="idioma" widget="many2one" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="idioma_tree_view" model="ir.ui.view">
+    <field name="name">upobye.idioma.tree</field>
+    <field name="model">upobye-.idioma</field>
+      <tree string="Idiomas">
+        <field name="nombre" />
+          <field name="certificacion" />
+           <field name="idioma" widget="many2one" />
+      </tree>
+    </field>
+  </record>
+
+   <record id="idioma_list_action" model="ir.actions.act_window">
       <field nombre="name">Idioma</field>
       <field nombre="res_model">upobye.Idioma</field>
       <field nombre="view_mode">tree,form</field>
