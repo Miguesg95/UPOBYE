@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+from odoo import models, fields, api
+
+
 class Baja (models.Model):
     import datetime
     duracionDias = fields.Integer(string='Duración',required=True, help="Tiempo en días que dura la baja")
