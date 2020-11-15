@@ -3,7 +3,7 @@
 {'name': "UPOBYE",
     'summary': """Gestion del modulo UPOBYE""",
     'description': """RRRHH,
-    despidos, bajas, etc""",
+    'despidos', bajas, etc""",
     'author': "Grupo 2",
     'author': "grupo 2",
     'category': 'Uncategorized',
