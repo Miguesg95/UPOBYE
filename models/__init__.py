@@ -8,3 +8,5 @@ from . import Proyecto
 from . import Sector
 from . import TipoDespido
 from . import Titulacion
+from . import TipoContrato
+from . import Puesto
