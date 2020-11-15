@@ -5,7 +5,7 @@
       <form string="Idiomas">
         <sheet layout="auto">
           <group>
-            <field name="nombre" />
+            <field name="name" />
             <field name="certificacion" />
             <field name="idioma" widget="many2one" />
           </group>
