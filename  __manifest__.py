@@ -1,16 +1,36 @@
-# -*-coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+{
+    'name': "UPOBYE",
 
-{'name': "UPOBYE",
-    'summary': """Gestion del modulo UPOBYE""",
-    'description': """RRRHH,despidos, bajas, etc""",
-    'author': "Grupo 2",
-    'author': "grupo 2",
+    'summary': """
+        Módulo de gestión de despidos""",
+
+    'description': """
+        El objetivo de este módulo es facilitar la gestión de despidos, bajas y vacaciones
+    """,
+
+    'author': "My Company",
+    'website': "http://www.yourcompany.com",
+
+    # Categories can be used to filter modules in modules listing
+    # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
+    # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
+
+    # any module necessary for this one to work correctly
     'depends': ['base'],
-    'data': [ 'security/security.xml',
-    'security/ir.model.access.csv',
-    'views/views.xml',],
-    'demo': [ 'demo/demo.xml',],
-    'application': True,
+
+    # always loaded
+    'data': [
+        'security/ir.model.access.csv',
+        'views/views.xml',
+        'views/templates.xml',
+        'views/sector_view.xml',
+        'views/proyecto_view.xml'
+    ],
+    # only loaded in demonstration mode
+    'demo': [
+        'demo/demo.xml',
+    ],
 }
