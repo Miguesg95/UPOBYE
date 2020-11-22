@@ -14,7 +14,7 @@
 #             'objects': http.request.env['UPOBYE.despidos'].search([]),
 #         })
 
-#     @http.route('/UPOBYE/despidos/objects/<model("UPOBYEdespidos"):obj>/', auth='public')
+#     @http.route('/UPOBYE/despidos/objects/<model("UPOBYE.despidos"):obj>/', auth='public')
 #     def object(self, obj, **kw):
 #         return http.request.render('UPOBYE.object', {
 #             'object': obj
