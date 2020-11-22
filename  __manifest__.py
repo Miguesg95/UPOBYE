@@ -11,7 +11,6 @@
 
     'author': "GRUPO2",
     'website': "https://github.com/Miguesg95/UPOBYE.git",
-
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
@@ -23,22 +22,14 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/sector_view.xml',
-        'views/Baja_view.xml',
-        'views/Despidos_view.xml',
-        'views/Idioma_view.xml',
-        'views/Proyecto_view.xml',
-        'views/Puesto_view.xml',
-        'views/Sector_view.xml',
-        'views/TipoContrato_view.xml',
-        'views/TipoDespido_view.xml',
-        'views/Titulacion_view.xml'
+        #'views/sector_view.xml',
+        'security/security.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        #'demo/demo.xml',
     ],
 }
