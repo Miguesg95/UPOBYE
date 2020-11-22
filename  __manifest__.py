@@ -9,8 +9,8 @@
         El objetivo de este módulo es facilitar la gestión de despidos, bajas y vacaciones
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "GRUPO2,
+    'website': "https://github.com/Miguesg95/UPOBYE.git",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
