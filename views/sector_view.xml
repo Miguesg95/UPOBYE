@@ -2,7 +2,6 @@
   <record id="upobye_sector_form_view" model="ir.ui.view">
     <field name="name">upobye.sector.form</field>
     <field name="model">upobye.sector</field>
-    <field name="descripcion">upobye.sector</field>
     <field name="arch" type="xml">
       <form string="Sectores">
         <sheet layout="auto">
