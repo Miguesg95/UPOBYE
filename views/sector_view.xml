@@ -1,7 +1,9 @@
 <odoo>
-  <record id="sector_form_view" model="ir.ui.view">
+  <record id="upobye_sector_form_view" model="ir.ui.view">
     <field name="name">upobye.sector.form</field>
-    <field name="descripcion">upobye-.sector</field>
+    <field name="model">upobye.sector</field>
+    <field name="descripcion">upobye.sector</field>
+    <field name="arch" type="xml">
       <form string="Sectores">
         <sheet layout="auto">
           <group>
@@ -14,14 +16,24 @@
     </field>
   </record>
 
-  <record id="sector_tree_view" model="ir.ui.view">
+  <record id="upobye_sector_tree_view" model="ir.ui.view">
     <field name="name">upobye.sector.tree</field>
-    <field name="model">upobye-.sector</field>
+    <field name="model">upobye.sector</field>
+    <field name="arch" type="xml">
       <tree string="Sectores">
         <field name="nombre_proyecto" />
-          <field name="descripcion_sector" />
-           <field name="sector" widget="many2many" />
+        <field name="descripcion_sector" />
+        <field name="sector" widget="many2many" />
       </tree>
+    </field>
+  </record>
+
+  <record id="sector_list_action" model="ir.actions.act_window">
+    <field name="name">Sector</field>
+    <field name="res_model">upobye.sector</field>
+    <field name="view_made">tree.form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer sector</p>
     </field>
   </record>
 
