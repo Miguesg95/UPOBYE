@@ -1,7 +1,8 @@
 <odoo>
-  <record id="proyecto_form_view" model="ir.ui.view">
+
+  <record id="upobye_proyecto_form_view" model="ir.ui.view">
     <field name="name">upobye.proyecto.form</field>
-    <field name="descripcion">upobye.proyecto</field>
+    <field name="model">upobye.proyecto</field>
     <field name="arch" type="xml">
       <form string="Proyectos">
         <sheet layout="auto">
@@ -9,22 +10,22 @@
             <field name="name" />
             <field name="description" />
             <field name="sectores"/>
-            <!--<field name="proyecto" widget="many2many" />-->
+            <field name="sectores_id" widget="many2many" />
           </group>
         </sheet>
       </form>
     </field>
   </record>
 
-  <record id="proyecto_tree_view" model="ir.ui.view">
+  <record id="upobye_proyecto_tree_view" model="ir.ui.view">
     <field name="name">upobye.proyecto.tree</field>
     <field name="model">upobye.proyecto</field>
     <field name="arch" type="xml">
       <tree string="Proyectos">
-          <field name="name" />
-          <field name="description" />
-          <field name="sectores"/>
-          <!--<field name="proyecto" widget="many2many" />-->
+        <field name="name" />
+        <field name="description" />
+        <field name="sectores"/>
+        <field name="sectores_id" widget="many2many" />
       </tree>
     </field>
   </record>
