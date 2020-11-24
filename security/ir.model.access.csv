@@ -3,3 +3,5 @@ access_upobye_sector,access_upobye_sector,model_upobye_sector,base.group_user,1,
 access_upobye_proyecto,access_upobye_proyecto,model_upobye_proyecto,base.group_user,1,1,1,1 
 access_upobye_experiencia,upobye.experiencia,model_upobye_experiencia,base.group_user,1,1,1,1
 access_upobye_baja,upobye.baja,model_upobye_baja,base.group_user,1,1,1,1
+access_upobye_idioma,access_upobye_idioma,model_upobye_idioma,base.group_user,1,1,1,1 
+access_upobye_titulacion,access_upobye_titulacion,model_upobye_titulacion,base.group_user,1,1,1,1

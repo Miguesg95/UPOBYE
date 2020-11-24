@@ -28,6 +28,8 @@
         'views/Experiencia_view.xml',
         'views/Baja_view.xml',
         'views/proyecto_view.xml',
+        'views/Idioma_view.xml',
+        'views/Titulacion_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
