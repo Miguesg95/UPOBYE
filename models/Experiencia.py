@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-class Experiencia (models.Model):    
+
+class Experiencia (models.Model):  
+    _name = 'upobye.Experiencia'
+    _description = 'Recoge una experiencia laboral del empleado'  
 
     nombre = fields.Char(string="Nombre",required=True,help="Nombre de la ocupación que desea acreditar")
     certificacion = fields.Char(string="Certificado por",required=True,help="Nombre de la identidad que certifica la experiencia")
