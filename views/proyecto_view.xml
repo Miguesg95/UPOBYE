@@ -13,7 +13,7 @@
           </group>
         </sheet>
       </form>
-      </field>
+    </field>
   </record>
 
   <record id="proyecto_tree_view" model="ir.ui.view">
@@ -28,14 +28,14 @@
       </tree>
     </field>
   </record>
-
+  
   <record id="proyecto_list_action" model="ir.actions.act_window">
     <field name="name">Proyecto</field>
     <field name="res_model">upobye.proyecto</field>
-    <field name="view_made">tree.form</field>
+    <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Crea el primer proyecto</p>
     </field>
   </record>
-
+  
 </odoo>
