@@ -28,7 +28,7 @@
         'views/templates.xml',
         'views/sector_view.xml',
         'views/Experiencia_view.xml',
-        #'views/proyecto_view.xml',
+        'views/proyecto_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
