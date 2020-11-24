@@ -22,17 +22,19 @@
 
     # always loaded
     'data': [
-        #'security/ir.model.access.csv',
         'security/security.xml',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
         'views/sector_view.xml',
         'views/Experiencia_view.xml',
         'views/proyecto_view.xml',
+        'views/Baja_view.xml',
+        'views/proyecto_view.xml',
+        'views/Idioma_view.xml',
+        'views/Titulacion_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
-        #'demo/demo.xml',
+        'demo/demo.xml',
     ],
 }

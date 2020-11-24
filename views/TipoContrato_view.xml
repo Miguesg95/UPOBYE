@@ -1,8 +1,8 @@
 <odoo>
-  <record id="upobye_TipoContrato_form_view" model="ir.ui.view">
-    <field name="name">upobye.TipoContrato.form</field>
-    <field name="descripcion">upobye.TipoContrato</field>
-      <form string="TipoContrato">
+  <record id="upobye_tipoContrato_form_view" model="ir.ui.view">
+    <field name="name">upobye.tipoContrato.form</field>
+    <field name="descripcion">upobye.tipoContrato</field>
+      <form string="tipoContrato">
         <sheet layout="auto">
           <group>
             <field name="type" />
@@ -14,9 +14,9 @@
     </field>
   </record>
 
-  <record id="upobye_TipoContrato_tree_view" model="ir.ui.view">
-    <field name="name">upobye.TipoContrato.tree</field>
-    <field name="model">upobye.TipoContrato</field>
+  <record id="upobye_tipoContrato_tree_view" model="ir.ui.view">
+    <field name="name">upobye.tipoContrato.tree</field>
+    <field name="model">upobye.tipoContrato</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
         <field name="type" />
@@ -28,7 +28,7 @@
 
    <record id="tipoContrato_list_action" model="ir.actions.act_window">
       <field nombre="name">Tipo de contrato</field>
-      <field nombre="res_model">upobye.TipoContrato</field>
+      <field nombre="res_model">upobye.tipoContrato</field>
       <field nombre="view_mode">tree,form</field>
       <field nanombreme="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the first class</p>

@@ -9,4 +9,8 @@
     <menuitem name="Sectores" id="sectores_menu" parent="upobye_menu" groups="group_upobye_manager" action="sector_list_action"/>
     <menuitem name="Experiencia" id="experiencia_menu" parent="upobye_menu" groups="group_upobye_manager" action="experiencia_list_action"/>
     <menuitem name="Proyectos" id="proyectos_menu" parent="upobye_menu" groups="group_upobye_manager" action="proyecto_list_action"/>
+    <menuitem name="Baja" id="baja_menu" parent="upobye_menu" groups="group_upobye_manager" action="baja_list_action"/>
+    <menuitem name="Idioma" id="idioma_menu" parent="upobye_menu" groups="group_upobye_manager" action="idioma_list_action"/>
+    <menuitem name="Titulacion" id="titulacion_menu" parent="upobye_menu" groups="group_upobye_manager" action="titulacion_list_action"/>
+
 </odoo>

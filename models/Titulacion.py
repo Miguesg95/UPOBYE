@@ -3,7 +3,8 @@
 from odoo import models, fields, api
 
 class Titulacion(models.Model):
-     _name = 'upobye.Titulacion'
-     _description = 'upobye Titulacion'
+     _name = 'upobye.titulacion'
+     _description = 'Titulacion del empleado'
+     
      name = fields.Char(string="Nombre", required=True, help="Nombre")
-     certificacion = fields.Char(string="certificacion", required=True, help="Certificacion")
+     certificacion = fields.Char(string="Certificado por",required=True,help="Nombre de la identidad que certifica la titulacion")
