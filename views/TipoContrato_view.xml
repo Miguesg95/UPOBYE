@@ -7,7 +7,6 @@
           <group>
             <field name="type" />
             <field name="description" />
-            <field name="contract_id" widget="many2one" />
           </group>
         </sheet>
       </form>
@@ -21,7 +20,6 @@
       <tree string="tree_string">
         <field name="type" />
         <field name="description" />
-        <field name="contract_id" widget="many2one" />
       </tree>
     </field>
   </record>
