@@ -1,18 +1,43 @@
-
 <odoo>
-    <record id="proyecto" model="upobye.proyecto">
-        <field name="name">Proyecto0</field>
-        <field name="description">Esta es la descripción para 
-        el proyecto de prueba 0</field>
-        <field name="sector">Sector0</field>
+    <data>
+    <!--
+          <record id="object0" model="upobye.upobye">
+            <field name="name">Object 0</field>
+            <field name="value">0</field>
+          </record>
+
+          <record id="object1" model="upobye.upobye">
+            <field name="name">Object 1</field>
+            <field name="value">10</field>
+          </record>
+
+          <record id="object2" model="upobye.upobye">
+            <field name="name">Object 2</field>
+            <field name="value">20</field>
+          </record>
+
+          <record id="object3" model="upobye.upobye">
+            <field name="name">Object 3</field>
+            <field name="value">30</field>
+          </record>
+
+          <record id="object4" model="upobye.upobye">
+            <field name="name">Object 4</field>
+            <field name="value">40</field>
+          </record>
+    -->
+
+    <record id="proyecto0" model="upobye.proyecto">
+      <field name="name">Proyecto0</field>
+      <field name="description">Esta es la descripción para el proyecto de prueba 0</field>
     </record>
     
-    <record id="sector" model="upobye.sector">
-        <field name="name">Sector0</field>
-        <field name="description">Esta es la descripción para 
-        el sector de prueba 0</field>
+    <record id="sector0" model="upobye.sector">
+      <field name="name">Sector0</field>
+      <field name="description">Esta es la descripción para el sector de prueba 0</field>
     </record>
 
+  </data>
 </odoo>
 
 
