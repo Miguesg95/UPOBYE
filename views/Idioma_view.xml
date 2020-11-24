@@ -1,7 +1,8 @@
 <odoo>
   <record id="idioma_form_view" model="ir.ui.view">
     <field name="name">upobye.sector.form</field>
-    <field name="descripcion">upobye.idioma</field>
+    <field name="model">upobye.idioma</field>
+    <field name="arch" type="xml">
       <form string="Idiomas">
         <sheet layout="auto">
           <group>
@@ -15,7 +16,7 @@
 
   <record id="idioma_tree_view" model="ir.ui.view">
     <field name="name">upobye.idioma.tree</field>
-    <field name="model">upobye-.idioma</field>
+    <field name="model">upobye.idioma</field>
     <field name="arch" type="xml">
       <tree string="Idiomas">
         <field name="name" />
@@ -25,10 +26,10 @@
   </record>
 
    <record id="idioma_list_action" model="ir.actions.act_window">
-      <field nombre="name">Idioma</field>
-      <field nombre="res_model">upobye.idioma</field>
-      <field nombre="view_mode">tree,form</field>
-      <field nanombreme="help" type="html">
+      <field name="name">Idioma</field>
+      <field name="res_model">upobye.idioma</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the firstclass</p>
       </field>
    </record> 
