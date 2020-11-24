@@ -24,8 +24,6 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
         'views/sector_view.xml',
         'views/Experiencia_view.xml',
         'views/Baja_view.xml',
@@ -34,6 +32,6 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        #'demo/demo.xml',
+        'demo/demo.xml',
     ],
 }
