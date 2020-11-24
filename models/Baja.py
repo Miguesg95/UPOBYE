@@ -4,11 +4,10 @@ from odoo import models, fields, api
 
 
 class Baja (models.Model):
-    _name = 'upobye.Baja'
+    _name = 'upobye.baja'
     _description = 'Gestión de baja del empleado'
 
-    import datetime
-    duracionDias = fields.Integer(string='Duración',required=True, help="Tiempo en días que dura la baja")
+    duracionDias = fields.Integer(string='Duración en días',required=True, help="Tiempo en días que dura la baja")
     fechaInicio = fields.Datetime(string="Fecha de inicio", required=True, autodate=True)
-    fechaFin = fechaInicio + datetime.timedelta(days=duracionDias)
+    fechaFin = fields.Datetime(string="Fecha de finalización", required=True, autodate=True)
     motivoBaja = fields.Text(string="Motivo", required=True, help="Motivo por el que se concedió la baja")
