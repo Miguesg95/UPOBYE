@@ -7,7 +7,9 @@
           <group>
             <field name="name" />
             <field name="certificacion" />
+            <!-- 
             <field name="titulacion" widget="many2one" />
+            -->
           </group>
         </sheet>
       </form>
@@ -17,20 +19,22 @@
   <record id="titulacion_tree_view" model="ir.ui.view">
     <field name="name">upobye.titulacion.tree</field>
     <field name="model">upobye-.titulacion</field>
+    <field name="arch" type="xml">
       <tree string="Titulaciones">
-        <field name="nombre" />
+        <field name="name" />
           <field name="certificacion" />
-           <field name="titulacion" widget="many2one" />
+           <field name="titulacion" />
       </tree>
     </field>
   </record>
 
-   <record id="Titulacion_list_action" model="ir.actions.act_window">
+   <record id="titulacion_list_action" model="ir.actions.act_window">
       <field nombre="name">Titulacion</field>
-      <field nombre="res_model">upobye.Titulacion</field>
+      <field nombre="res_model">upobye.titulacion</field>
       <field nombre="view_mode">tree,form</field>
       <field nanombreme="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the firstclass</p>
       </field>
    </record> 
+   
 </odoo>
