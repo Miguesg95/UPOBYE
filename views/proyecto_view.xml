@@ -6,10 +6,10 @@
       <form string="Proyectos">
         <sheet layout="auto">
           <group>
-            <field name="nombre_proyecto" />
-            <field name="descripcion_proyecto" />
+            <field name="name" />
+            <field name="description" />
             <field name="sectores"/>
-            <field name="proyecto" widget="many2many" />
+            <!--<field name="proyecto" widget="many2many" />-->
           </group>
         </sheet>
       </form>
@@ -21,10 +21,10 @@
     <field name="model">upobye.proyecto</field>
     <field name="arch" type="xml">
       <tree string="Proyectos">
-          <field name="nombre_proyecto" />
-          <field name="descripcion_proyecto" />
+          <field name="name" />
+          <field name="description" />
           <field name="sectores"/>
-          <field name="proyecto" widget="many2many" />
+          <!--<field name="proyecto" widget="many2many" />-->
       </tree>
     </field>
   </record>
