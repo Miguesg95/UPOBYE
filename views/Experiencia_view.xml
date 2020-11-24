@@ -1,17 +1,20 @@
 <odoo>
   <record id="Experiencia_form_view" model="ir.ui.view">
-    <field name="name">upobye.Experiencia.form</field>
-    <field name="descripcion">upobye-.Experiencia</field>
+    <field name="name">upobye.experiencia.form</field>
+    <field name="model">upobye.experiencia</field>
+    <field name="arch" type="xml">
       <form string="Experiencia">
         <sheet layout="auto">
           <group>
-            <field name="nombre" />
+            <field name="name" />
             <field name="certificacion" />
             <field name="fechaInicio" />
             <field name="fechaFin" />
             <field name="duracionDias" />
             <field name="jornada" />
+            <!-- 
             <field name="Experiencia" widget="many2one" />
+            -->
           </group>
         </sheet>
       </form>
@@ -19,26 +22,27 @@
   </record>
 
   <record id="Experiencia_tree_view" model="ir.ui.view">
-    <field name="name">upobye.Experiencia.tree</field>
-    <field name="model">upobye-.Experiencia</field>
+    <field name="name">upobye.experiencia.tree</field>
+    <field name="model">upobye.experiencia</field>
+    <field name="arch" type="xml">
       <tree string="Experiencia">
-        <field name="nombre" />
-          <field name="certificacion" />
-            <field name="fechaInicio" />
-              <field name="fechaFin" />
-                <field name="duracionDias" />
-                <field name="jornada" />
-                  <field name="Experiencia" widget="many2one" />
+        <field name="name" />
+        <field name="certificacion" />
+        <field name="fechaInicio" />
+        <field name="fechaFin" />
+        <field name="duracionDias" />
+        <field name="jornada" />
       </tree>
     </field>
   </record>
 
-   <record id="Experiencia_list_action" model="ir.actions.act_window">
-      <field nombre="name">Experiencia</field>
-      <field nombre="res_model">upobye.Experiencia</field>
-      <field nombre="view_mode">tree,form</field>
-      <field nombre="help" type="html">
+   <record id="experiencia_list_action" model="ir.actions.act_window">
+      <field name="name">Experiencia</field>
+      <field name="res_model">upobye.experiencia</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the firstclass</p>
       </field>
    </record> 
+    
 </odoo>

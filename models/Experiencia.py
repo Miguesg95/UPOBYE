@@ -2,11 +2,11 @@
 
 from odoo import models, fields, api
 
-class Experiencia (models.Model):  
-    _name = 'upobye.Experiencia'
+class Experiencia(models.Model):  
+    _name = 'upobye.experiencia'
     _description = 'Recoge una experiencia laboral del empleado'  
 
-    nombre = fields.Char(string="Nombre",required=True,help="Nombre de la ocupación que desea acreditar")
+    name = fields.Char(string="Nombre",required=True,help="Nombre de la ocupación que desea acreditar")
     certificacion = fields.Char(string="Certificado por",required=True,help="Nombre de la identidad que certifica la experiencia")
     fechaInicio = fields.Datetime(string="Fecha de inicio", required=True, autodate=True)
     fechaFin = fields.Datetime(string="Fecha de finalización", required=True, autodate=True)

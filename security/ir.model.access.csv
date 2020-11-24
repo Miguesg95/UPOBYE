@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_upobye_upobye,upobye.upobye,model_upobye_upobye,base.group_user,1,1,1,1
 access_upobye_sector,access_upobye_sector,model_upobye_sector,base.group_user,1,1,1,1 
 access_upobye_proyecto,access_upobye_proyecto,model_upobye_proyecto,base.group_user,1,1,1,1 
+access_upobye_upobye,upobye.experiencia,model_upobye_experiencia,base.group_user,1,1,1,1
