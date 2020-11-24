@@ -2,33 +2,39 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record id="despidos_list_action" model="ir.actions.act_window">
-      <field name="name">Despidos</field>
-       <field name="name">TipoDespido</field>
-        <field name="res_model">despidos.Despidos</field>
-        <field name="res_model">despidos.TipoDespido</field>
-      <field name="view_model">tree,form/field>
-       <field name="help" type="html">
-     <p class="o_view_nocontent_smiling_face">Create the first class</p>
-      </field>
+    <record id="upobye_Despidos_form_view" model="ir.ui.view">
+      <field name="name">upobye.Despidos.form</field>
+      <field name="description">upobye.Despidos</field>
+      <form string="TipoDespido">
+        <sheet layout="auto">
+          <group>
+            <field name="type" />
+            <field name="description" />
+            <field name="id_Despido" widget="many2one" />
+          </group>
+        </sheet>
+      </form>
     </record>
 
+    <record id="upobye_Despidos_tree_view" model="ir.ui.view">
+    <field name="name">upobye.Despidos.tree</field>
+    <field name="model">upobye.Despidos/field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="type" />
+        <field name="description" />
+        <field name="id_Despidos" widget="many2one" />
+      </tree>
+    </field>
+  </record>
 
-    <!-- Top menu item -->
-
-    <menuitem name="despidos" id="main_despidos_menu" groups="group_despidos_manager"/>
-
-    <!-- menu categories -->
-
-    <menuitem name="Despido" id="despidos_Despido" groups="group_despidos_manager" parent="main_despidos_menu"/>
-    <menuitem name="TipoDespido" id="despidos_TipoDespido" groups="group_despidos_manager" parent="main_despidos_menu"/>
-
-    <!-- actions -->
-
-    <menuitem name="Despido" id="Despido_menu" parent="despidos_Despido" groups="group_despidos_manager"
-              action="despidos_list_action"/>
-    <menuitem name="TipoDespido" id="despidos_TipoDespido" parent="despidos_TipoDespido" groups="group_despidos_manager"
-              action="despidos_list_action"/>
-
+   <record id="Despidos_list_action" model="ir.actions.act_window">
+      <field nombre="name">Despido</field>
+      <field nombre="res_model">upobye.Despidos</field>
+      <field nombre="view_mode">tree,form</field>
+      <field nanombreme="help" type="html">
+         <p class="o_view_nocontent_smiling_face">Create the first class</p>
+      </field>
+   </record> 
   </data>
 </odoo>

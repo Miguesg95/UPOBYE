@@ -2,32 +2,55 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record id="despidos_list_action" model="ir.actions.act_window">
-      <field name="name">Despidos</field>
-       <field name="name">TipoDespido</field>
-        <field name="res_model">despidos.Despidos</field>
-        <field name="res_model">despidos.TipoDespido</field>
-      <field name="view_model">tree,form/field>
-       <field name="help" type="html">
-     <p class="o_view_nocontent_smiling_face">Create the first class</p>
-      </field>
+    <record id="upobye_TipoDespido_form_view" model="ir.ui.view">
+      <field name="name">upobye.TipoDespido.form</field>
+       <field name="description">upobye.TipoDespido</field>
+     <form string="TipoDespido">
+     <sheet layout="auto">
+     <group>
+     <field name="type" />
+     <field name="description" />
+     <field name="id_tipoDespido" widget="many2one" />
+     </group>
+     </sheet>
+     </form>
     </record>
 
+<record id="upobye_TipoDespido_tree_view" model="ir.ui.view">
+    <field name="name">upobye.TipoDespido.tree</field>
+    <field name="model">upobye.TipoDespido/field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="type" />
+        <field name="description" />
+        <field name="id_tipoDespido" widget="many2one" />
+      </tree>
+    </field>
+  </record>
+
+   <record id="tipoDespido_list_action" model="ir.actions.act_window">
+      <field nombre="name">Tipo de despido</field>
+      <field nombre="res_model">upobye.TipoDespido</field>
+      <field nombre="view_mode">tree,form</field>
+      <field nanombreme="help" type="html">
+         <p class="o_view_nocontent_smiling_face">Create the first class</p>
+      </field>
+   </record> 
 
     <!-- Top menu item -->
 
-    <menuitem name="TipoDespido" id="main_TipoDespido_menu" groups="group_UPOBYE_manager"/>
+    <!--<!<menuitem name="TipoDespido" id="main_TipoDespido_menu" groups="group_UPOBYE_manager"/>-->
 
     <!-- menu categories -->
 
     
-    <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" groups="group_UPOBYE_manager" parent="main_UPOBYE_menu"/>
+   <!--  <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" groups="group_UPOBYE_manager" parent="main_UPOBYE_menu"/>-->
 
     <!-- actions -->
 
 
-    <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" parent="UPOBYE_TipoDespido" groups="group_UPOBYE_manager"
-              action="UPOBYE_list_action"/>
+   <!--  <menuitem name="TipoDespido" id="UPOBYE_TipoDespido" parent="UPOBYE_TipoDespido" groups="group_UPOBYE_manager"-->
+             <!--  action="UPOBYE_list_action"/>-->
 
   </data>
 </odoo>
