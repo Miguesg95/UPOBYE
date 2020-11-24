@@ -7,5 +7,6 @@ class Sector(models.Model):
 
     name = fields.Char(string="nombre_sector", size=60, help="Nombre del sector")
     description = fields.Text(string="descripcion_sector", size=200, help="Descripción del sector")
-    #sectores_proyecto = fields.many2many("upobye.Sector","Sector")
+    proyectos_id= fields.Many2many("upobye.proyecto",string="Proyectos de este sector")
+    
     

@@ -9,7 +9,7 @@ class proyecto(models.Model):
 
     name = fields.Char(string="nombre_proyecto", size=60, help="Nombre del proyecto")
     descripcion = fields.Text(string="descripcion_proyecto", size=200, help="Descripción del proyecto")
-    #sectores_proyecto = fields.many2many("upobye.sector","Sector")
+    sectores_id= fields.Many2many("upobye.sector",string="Sectores de este proyecto")
     sectores = fields.Selection([('agricola','Agricola'),
                       ('transportes', 'Transportes'),
                       ('sanitario', 'Sanitario'),],

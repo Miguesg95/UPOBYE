@@ -9,7 +9,7 @@
           <group>
             <field name="name" />
             <field name="description" />
-            <!--<field name="sector" widget="many2many" />-->
+            <field name="proyectos_id" widget="many2many" />
           </group>
         </sheet>
       </form>
@@ -23,7 +23,7 @@
       <tree string="Sectores">
         <field name="name" />
         <field name="description" />
-        <!--<field name="sector" widget="many2many" />-->
+        <field name="proyectos_id" widget="many2many" />
       </tree>
     </field>
   </record>
