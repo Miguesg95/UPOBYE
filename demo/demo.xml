@@ -3,14 +3,14 @@
     <record id="proyecto" model="upobye.proyecto">
         <field name="name">Proyecto0</field>
         <field name="description">Esta es la descripción para 
-        el proyecto0</field>
-        <field name="sector">Agrario</field>
+        el proyecto de prueba 0</field>
+        <field name="sector">Sector0</field>
     </record>
     
     <record id="sector" model="upobye.sector">
         <field name="name">Sector0</field>
         <field name="description">Esta es la descripción para 
-        el sector0</field>
+        el sector de prueba 0</field>
     </record>
 
 </odoo>
