@@ -19,5 +19,5 @@ class TipoContrato(models.Model):
                             ('contFormacion','Contrato para la formación y el aprendizaje'),
                             ('contPracticas','Contrato en practicas'),
                                     ],'Tipo de contrato')
-    description = fields.Text()
+    description = fields.Text(string="Descripcion del contrato", required=True, help="breve descripcion")
     
