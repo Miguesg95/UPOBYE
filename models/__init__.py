@@ -6,3 +6,5 @@ from . import Experiencia
 from . import Baja
 from . import Titulacion
 from . import Idioma
+from . import Puesto
+from . import TipoContrato

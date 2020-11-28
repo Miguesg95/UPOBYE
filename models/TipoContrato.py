@@ -4,11 +4,11 @@ from odoo import models, fields, api
 
 
 class TipoContrato(models.Model):
-    _name = 'upobye.tipoContrato'
+    _name = 'upobye.tipo_contrato'
     _description = 'upobye Tipo de Contrato'
     
     name = fields.Char(string="Nombre", size=60, help="Nombre Tipo Contrato")
-    type = fields.Selection([('indOrdinario','indefinido ordinario'),
+    tipo = fields.Selection([('indOrdinario','indefinido ordinario'),
                             ('indIncentivado',' indefinido incentivado'),
                             ('fijoDiscontinuo','fijo discontinuo'),
                             ('contObra','Contrato de obra'),
@@ -19,5 +19,5 @@ class TipoContrato(models.Model):
                             ('contFormacion','Contrato para la formación y el aprendizaje'),
                             ('contPracticas','Contrato en practicas'),
                                     ],'Tipo de contrato')
-    description = fields.Text()
+    description = fields.Text(string="Descripcion del contrato", required=True, help="breve descripcion")
     
