@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
+from . import models
 from . import Sector
 from . import Proyecto
 from . import Experiencia
 from . import Baja
 from . import Titulacion
 from . import Idioma
+from . import Despidos
 from . import Puesto
 from . import TipoContrato
