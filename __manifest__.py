@@ -24,13 +24,15 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
-        'views/sector_view.xml',
         'views/Experiencia_view.xml',
         'views/proyecto_view.xml',
         'views/Baja_view.xml',
-        'views/proyecto_view.xml',
         'views/Idioma_view.xml',
         'views/Titulacion_view.xml',
+        'views/sector_view.xml',
+        'views/proyecto_view.xml',
+        'views/Despidos_view.xml',
+        'views/Idioma_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode

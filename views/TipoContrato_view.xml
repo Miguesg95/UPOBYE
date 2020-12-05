@@ -1,36 +1,34 @@
 <odoo>
-  <record id="upobye_tipoContrato_form_view" model="ir.ui.view">
+  <record id="TipoContrato_form_view" model="ir.ui.view">
     <field name="name">upobye.tipoContrato.form</field>
-    <field name="descripcion">upobye.tipoContrato</field>
+    <field name="model">upobye.tipoContrato</field>
       <form string="tipoContrato">
         <sheet layout="auto">
           <group>
             <field name="type" />
             <field name="description" />
-            <field name="contract_id" widget="many2one" />
           </group>
         </sheet>
       </form>
     </field>
   </record>
 
-  <record id="upobye_tipoContrato_tree_view" model="ir.ui.view">
+  <record id="TipoContrato_tree_view" model="ir.ui.view">
     <field name="name">upobye.tipoContrato.tree</field>
     <field name="model">upobye.tipoContrato</field>
     <field name="arch" type="xml">
-      <tree string="tree_string">
+      <tree string="tipoContrato">
         <field name="type" />
         <field name="description" />
-        <field name="contract_id" widget="many2one" />
       </tree>
     </field>
   </record>
 
    <record id="tipoContrato_list_action" model="ir.actions.act_window">
-      <field nombre="name">Tipo de contrato</field>
-      <field nombre="res_model">upobye.tipoContrato</field>
-      <field nombre="view_mode">tree,form</field>
-      <field nanombreme="help" type="html">
+      <field name="name">TipoContrato</field>
+      <field name="res_model">upobye.tipoContrato</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the first class</p>
       </field>
    </record> 

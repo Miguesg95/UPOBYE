@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record id="upobye_Despidos_form_view" model="ir.ui.view">
-      <field name="name">upobye.Despidos.form</field>
-      <field name="description">upobye.Despidos</field>
+    <record id="upobye_despidos_form_view" model="ir.ui.view">
+      <field name="name">upobye.despidos.form</field>
+      <field name="description">upobye.despidos</field>
       <form string="TipoDespido">
         <sheet layout="auto">
           <group>
@@ -16,21 +16,21 @@
       </form>
     </record>
 
-    <record id="upobye_Despidos_tree_view" model="ir.ui.view">
-    <field name="name">upobye.Despidos.tree</field>
-    <field name="model">upobye.Despidos/field>
+    <record id="upobye_despidos_tree_view" model="ir.ui.view">
+    <field name="name">upobye.despidos.tree</field>
+    <field name="model">upobye.despidos</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
         <field name="type" />
         <field name="description" />
-        <field name="id_Despidos" widget="many2one" />
+        <field name="id_despidos" widget="many2one" />
       </tree>
     </field>
   </record>
 
-   <record id="Despidos_list_action" model="ir.actions.act_window">
+   <record id="despidos_list_action" model="ir.actions.act_window">
       <field nombre="name">Despido</field>
-      <field nombre="res_model">upobye.Despidos</field>
+      <field nombre="res_model">upobye.despidos</field>
       <field nombre="view_mode">tree,form</field>
       <field nanombreme="help" type="html">
          <p class="o_view_nocontent_smiling_face">Create the first class</p>

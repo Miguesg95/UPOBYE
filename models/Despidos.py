@@ -4,9 +4,9 @@ from odoo import models, fields, api
 
 
 class Despidos(models.Model):
-     _name = 'despidos.Despidos' 
+     _name = 'upobye.despidos' 
      #nombremodulo.nombreclase
-    _description = 'despidos.Despidos'
+    _description = 'upobye.despidos'
 
      name = fields.Integer(string="finiquito",required=True,help="Indemnización")
     motivo = fields.Text()

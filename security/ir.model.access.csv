@@ -1,7 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_upobye_sector,access_upobye_sector,model_upobye_sector,base.group_user,1,1,1,1
-access_upobye_proyecto,access_upobye_proyecto,model_upobye_proyecto,base.group_user,1,1,1,1
-access_upobye_experiencia,upobye.experiencia,model_upobye_experiencia,base.group_user,1,1,1,1
-access_upobye_baja,upobye.baja,model_upobye_baja,base.group_user,1,1,1,1
-access_upobye_idioma,access_upobye_idioma,model_upobye_idioma,base.group_user,1,1,1,1
-access_upobye_titulacion,access_upobye_titulacion,model_upobye_titulacion,base.group_user,1,1,1,1
+access_upobye_sector,access_upobye_sector,model_upobye_sector,group_upobye_manager,1,1,1,1
+access_upobye_proyecto,access_upobye_proyecto,model_upobye_proyecto,group_upobye_manager,1,1,1,1
+access_upobye_experiencia,upobye.experiencia,model_upobye_experiencia,group_upobye_manager,1,1,1,1
+access_upobye_baja,upobye.baja,model_upobye_baja,group_upobye_manager,1,1,1,1
+access_upobye_idioma,access_upobye_idioma,model_upobye_idioma,group_upobye_manager,1,1,1,1
+access_upobye_titulacion,access_upobye_titulacion,model_upobye_titulacion,group_upobye_manager,1,1,1,1
+access_upobye_despidos,access_upobye_despidos,model_upobye_despidos,group_upobye_manager,1,1,1,1
