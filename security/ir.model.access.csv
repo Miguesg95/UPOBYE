@@ -5,9 +5,7 @@ access_upobye_experiencia,upobye.experiencia,model_upobye_experiencia,group_upob
 access_upobye_baja,upobye.baja,model_upobye_baja,group_upobye_manager,1,1,1,1
 access_upobye_idioma,access_upobye_idioma,model_upobye_idioma,group_upobye_manager,1,1,1,1
 access_upobye_titulacion,access_upobye_titulacion,model_upobye_titulacion,group_upobye_manager,1,1,1,1
-<<<<<<< HEAD
 access_upobye_despidos,access_upobye_despidos,model_upobye_despidos,group_upobye_manager,1,1,1,1
-=======
 access_upobye_puesto,access_upobye_puesto,model_upobye_puesto,group_upobye_manager,1,1,1,1
 access_upobye_tipo_contrato,access_upobye_tipo_contrato,model_upobye_tipo_contrato,group_upobye_manager,1,1,1,1
->>>>>>> main
+
