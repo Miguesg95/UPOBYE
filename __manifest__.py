@@ -25,19 +25,14 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/Experiencia_view.xml',
-        'views/proyecto_view.xml',
         'views/Baja_view.xml',
-        'views/Idioma_view.xml',
         'views/Titulacion_view.xml',
         'views/sector_view.xml',
         'views/proyecto_view.xml',
-<<<<<<< HEAD
         'views/Despidos_view.xml',
         'views/Idioma_view.xml',
-=======
         'views/Puesto_view.xml',
         'views/TipoContrato_view.xml',
->>>>>>> main
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
