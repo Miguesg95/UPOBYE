@@ -1,40 +1,37 @@
 <odoo>
 
-  <!-- explicit list view definition -->
-
-  <record id="upobye_TipoDespido_form_view" model="ir.ui.view">
-    <field name="name">upobye.tipoDespido.form</field>
-    <field name="description">upobye.TipoDespido</field>
-    <form string="TipoDespido">
-      <sheet layout="auto">
-        <group>
-          <field name="name" />
-
-        </group>
-      </sheet>
-    </form>
-  </record>
-
-  <record id="upobye_TipoDespido_tree_view" model="ir.ui.view">
-    <field name="name">upobye.tipoDespido.tree</field>
+  <record id="TipoDespido_form_view" model="ir.ui.view">
+    <field name="name">upobye.tipo_despido.form</field>
     <field name="model">upobye.tipo_despido</field>
     <field name="arch" type="xml">
-      <tree string="forma">
-        <field name="name" />
+      <form string="TipoDespido">
+        <sheet layout="auto">
+          <group>
+            <field name="forma"/>
+            <field name="name" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
+  <record id="TipoDespido_tree_view" model="ir.ui.view">
+    <field name="name">upobye.tipo_despido.tree</field>
+    <field name="model">upobye.tipo_despido</field>
+    <field name="arch" type="xml">
+      <tree string="TipoDespido">
+        <field name="forma"/>
+        <field name="name" />
       </tree>
     </field>
   </record>
 
-  <record id="tipoDespido_list_action" model="ir.actions.act_window">
-    <field nombre="name">Tipo de despido</field>
-    <field nombre="res_model">upobye.tipo_despido</field>
-    <field nombre="view_mode">tree,form</field>
-    <field nanombreme="help" type="html">
+  <record id="TipoDespido_list_action" model="ir.actions.act_window">
+    <field name="name">TipoDespido</field>
+    <field name="res_model">upobye.tipo_despido</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first class</p>
     </field>
   </record>
-
-
-
 </odoo>
