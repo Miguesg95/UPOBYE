@@ -9,3 +9,4 @@ from . import Idioma
 from . import Despidos
 from . import Puesto
 from . import TipoContrato
+from . import TipoDespido

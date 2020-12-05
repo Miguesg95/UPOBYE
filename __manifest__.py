@@ -33,6 +33,7 @@
         'views/Idioma_view.xml',
         'views/Puesto_view.xml',
         'views/TipoContrato_view.xml',
+        'views/TipoDespido_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
