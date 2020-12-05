@@ -1,5 +1,5 @@
 <odoo>
-  <record id="Puesto_form_view" model="ir.ui.view">
+  <record id="puesto_form_view" model="ir.ui.view">
     <field name="name">upobye.puesto.form</field>
     <field name="model">upobye.puesto</field>
     <field name="arch" type="xml">
@@ -16,7 +16,7 @@
     </field>
   </record>
 
-  <record id="Puesto_tree_view" model="ir.ui.view">
+  <record id="puesto_tree_view" model="ir.ui.view">
     <field name="name">upobye.puesto.tree</field>
     <field name="model">upobye.puesto</field>
     <field name="arch" type="xml">
