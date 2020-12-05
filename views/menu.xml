@@ -13,5 +13,9 @@
     <menuitem name="Idioma" id="idioma_menu" parent="upobye_menu" groups="group_upobye_manager" action="idioma_list_action"/>
     <menuitem name="Titulacion" id="titulacion_menu" parent="upobye_menu" groups="group_upobye_manager" action="titulacion_list_action"/>
     <menuitem name="Puesto" id="puesto_menu" parent="upobye_menu" groups="group_upobye_manager" action="puesto_list_action"/>
+<<<<<<< HEAD
     <menuitem name="Tipo de Contrato" id="tipo_contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="tipo_contrato_list_action"/>
+=======
+    <menuitem name="TipoContrato" id="tipo_contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="tipo_contrato_list_action"/>
+>>>>>>> main
 </odoo>
