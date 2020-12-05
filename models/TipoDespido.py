@@ -5,7 +5,7 @@ from odoo import models, fields, api
 
 
 class TipoDespido(models.Model):
-     _name = 'upobye.tipoDespido'
+     _name = 'upobye.tipo_despido'
      _description = 'upobye.tipoDespido'
 
      name = fields.Char(string="forma",required=True,help="Tipo de despido")
