@@ -11,3 +11,5 @@ class Puesto (models.Model):
     ID = fields.Char(string="ID", required=True, help="ID")
     required = fields.Boolean(string="Necesario", help="¿Es necesario o no?")
     qualification = fields.Text(string="Requisitos", required=True, help="requisitos del puesto")
+
+    contrato_id = fields.One2many('upobye.contrato', 'puesto_id', 'Contrato')

@@ -15,3 +15,4 @@ class Proyecto(models.Model):
                       ('sanitario', 'Sanitario'),],
                       'Sector')
     
+    contrato_id = fields.One2many('upobye.contrato', 'proyecto_id', 'Contrato')
