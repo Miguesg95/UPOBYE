@@ -15,6 +15,8 @@ class Despidos(models.Model):
                                     ('fin de contrato','Fin de contrato'),
                                     ('baja indefinida','Baja indefinida')
                                     ],'Motivo del despido')
+
+     contrato_id = fields.One2many('upobye.contrato', 'despido_id', 'Contrato')
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #

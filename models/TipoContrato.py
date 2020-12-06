@@ -20,4 +20,5 @@ class TipoContrato(models.Model):
                             ('contPracticas','Contrato en practicas'),
                                     ],'Tipo de contrato')
     description = fields.Text(string="Descripcion del contrato", required=True, help="breve descripcion")
-    
+    contrato_id = fields.One2many('upobye.contrato', 'tipo_contrato_id', 'Contrato')
+

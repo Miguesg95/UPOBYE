@@ -16,4 +16,6 @@
     <menuitem name="Puesto" id="puesto_menu" parent="upobye_menu" groups="group_upobye_manager" action="puesto_list_action"/>
     <menuitem name="Tipo de Contrato" id="tipo_contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="TipoContrato_list_action"/>
     <menuitem name="Tipo de Despido" id="tipo_despido_menu" parent="upobye_menu" groups="group_upobye_manager" action="TipoDespido_list_action"/>
+    <menuitem name="Contrato" id="contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="Contrato_list_action"/>
+
 </odoo>
