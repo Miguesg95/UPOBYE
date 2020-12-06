@@ -1,58 +1,12 @@
 <odoo>
-    <template id="report_despido">
-        <t t-call="web.html_container">
-            <t t-foreach="docs" t-as="o">
+    <report id="action_upobye_despidos_report" string="Report" model="upobye.despidos" report_type="qweb-pdf" name="upobye.upobye_despidos_template" />
+
+        <template id="upobye_despidos_template">
+            <t t-call="web.html_container">
                 <t t-call="web.external_layout">
-                    <div class="page">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <div class="oe_structure" />
-                        <div class="row">
-                            <div class="col-xs-2" style="margin: auto;">
-                            </div>
-                            <center>
-                                <div class="col-xs-8" style="margin: auto;">
-                                    <table class="table table-condensed" style="border: 3px solid black !important;">
-                                        <tr>
-                                            <td width="40%">
-                                                <p style="text-align: center; padding-top: 10px;">
-                                                    <img t-if="not o.photo" t-att-src="'/web/static/src/img/placeholder.png'" height="120" border="1" width="120" />
-                                                    <img t-if="o.photo" t-att-src="'data:image/png;base64,%s' % to_text(o.photo)" height="120" border="1" width="120" />
-                                                </p>
-                                                <p style="text-align: center;">
-                                                    <h2>
-                                                        <span t-field="o.name" />
-                                                    </h2>
-                                                </p>
-                                            </td>
-                                            <td width="40%">
-                                                <table>
-                                                    <tr>
-                                                        <td>
-                                                            <p style="text-align: right; ">
-                                                                <strong>ID Card: </strong>
-                                                            </p>
-                                                            <p style="text-align: right; ">
-                                                                <strong>State: </strong>
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="text-align: left; padding-left: 10px;" t-field="o.idcard" />
-                                                            <p style="text-align: left; padding-left: 10px;" t-field="o.state" />
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </center>
-                        </div>
-                    </div>
+                    <div class="page">Este es el contenido.</div>
                 </t>
             </t>
-        </t>
-    </template>
+        </template>
+    </report>
 </odoo>
