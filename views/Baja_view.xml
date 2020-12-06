@@ -42,7 +42,7 @@
     <field name="name">upobye.baja.calendar</field>
     <field name="model">upobye.baja</field>
     <field name="arch" type="xml">
-      <calendar string="Baja" color="activityType" date_start="fechaInicio" date_stop="fechaFin" mode="month">
+      <calendar string="Baja" color="motivoBaja" date_start="fechaInicio" date_stop="fechaFin" mode="month">
         <field name="motivoBaja" />
         <field name="duracionDias" />
       </calendar> 
