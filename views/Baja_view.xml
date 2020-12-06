@@ -29,12 +29,24 @@
     </field>
   </record>
 
-   <record id="baja_list_action" model="ir.actions.act_window">
-      <field name="name">Baja</field>
-      <field name="res_model">upobye.baja</field>
-      <field name="view_mode">tree,form</field>
-      <field name="help" type="html">
-         <p class="o_view_nocontent_smiling_face">Create the firstclass</p>
-      </field>
-   </record> 
+  <record id="baja_list_action" model="ir.actions.act_window">
+    <field name="name">Baja</field>
+    <field name="res_model">upobye.baja</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create the firstclass</p>
+    </field>
+  </record> 
+
+  <record id="upobye_baja_calendar_view" model="ir.ui.view">
+    <field name="name">upobye.baja.calendar</field>
+    <field name="model">upobye.baja</field>
+    <field name="arch" type="xml">
+      <calendar string="Baja" color="activityType" date_start="fechaInicio" date_stop="fechaFin" mode="month">
+        <field name="motivoBaja" />
+        <field name="duracionDias" />
+      </calendar> 
+    </field>
+  </record>
+
 </odoo>
