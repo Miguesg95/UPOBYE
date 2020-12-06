@@ -24,6 +24,8 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+        'reports/reports.xml',
+        'reports/Despidos_report.xml',
         'views/Experiencia_view.xml',
         'views/Baja_view.xml',
         'views/Titulacion_view.xml',
