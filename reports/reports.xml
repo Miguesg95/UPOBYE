@@ -1,0 +1,3 @@
+<odoo>
+    <report id="report_despido" string="Despido report" model="upobye.despidos" report_type="qweb-pdf" name="upobye.despido" />
+</odoo>
