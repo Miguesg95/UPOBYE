@@ -1,10 +1,76 @@
 <odoo>
     <template id="upobye_despidos_template">
         <t t-call="web.html_container">
-            <t t-foreach="docs" t-as="doc">
-                <div class="page">
-                    <t t-esc="doc.motivo" />
-                </div>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">                    <!-- Probad tambien con web.internal_layout -->
+                    <div class="page">
+                        <div class="oe_structure" />
+                        <div class="row" style="font-size: 24px; margin-bottom: 20px;">
+                            <span style="font-weight: bold; text-decoration: underline; ">ID Card:</span>
+                            <span style="color: #999999;" t-field="o.motivo" />
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2" style="margin: auto; text-align: center; padding-left: 15px; padding-right: 15px; border-right: 2px solid #cccccc;">
+                                <p t-field="o.name" style="font-size: 14px; font-weight: bold;" />
+                            </div>
+                            <div class="col-xs-8" style="text-align: left; margin: auto; padding-left: 15px; padding-top: 10px;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <strong>ID Card: </strong>
+                                            </p>
+                                            <p>
+                                                <strong>State: </strong>
+                                            </p>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <p t-field="o.motivo" />
+                                            <p t-field="o.motivo_despido" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div t-if="o.contrato_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
+                            Clases reservadas de <span t-field="o.name" />
+                        </div>
+                        <div t-if="o.contrato_id" id="clases_reservadas" class="row" style="margin-top: 10px;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Titulo</th>
+                                        <th>Inicio</th>
+                                        <th>Fin</th>
+                                        <th>Ocupacion total</th>
+                                        <th>Instructor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.contrato_id" t-as="contrato">
+                                        <tr>
+                                            <td>
+                                                <p t-field="contrato.sueldo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.jornada" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.fecha" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.tiempo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.activo" />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </t>
             </t>
         </t>
     </template>
