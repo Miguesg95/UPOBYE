@@ -1,31 +1,5 @@
 <odoo>
-    <data>
-    <!--
-          <record id="object0" model="upobye.upobye">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
-
-          <record id="object1" model="upobye.upobye">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
-
-          <record id="object2" model="upobye.upobye">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
-
-          <record id="object3" model="upobye.upobye">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="upobye.upobye">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
-    -->
+  <data>
 
     <!--Demo para proyecto-->
     <record id="proyecto0" model="upobye.proyecto">
@@ -35,7 +9,7 @@
       Este módulo pretende ayudar en la gestión de bajas, despidos y periodos de inactividad de 
       los empleados de cualquier empresa.</field>
       <field name="sectores_id">sector0</field>
-      <field name="sectores">Administrativo</field>
+      <field name="sectores">administrativo</field>
       <!--<field name="contrato_id"></field>-->
     </record>
     <record id="proyecto1" model="upobye.proyecto">
@@ -43,7 +17,7 @@
       <field name="description">COVID-19 es un proyecto en el cual colaboran todos los españoles 
       para acabar con la pandemia que hemos vivido este 2020.</field>
       <field name="sectores_id">sector3</field>
-      <field name="sectores">Sanitario</field>
+      <field name="sectores">sanitario</field>
       <!--<field name="contrato_id"></field>-->
     </record>
     <record id="proyecto2" model="upobye.proyecto">
@@ -53,7 +27,7 @@
       de investigación tiene como objetivo recabar información acerca de la tecnología del silicio y exponer 
       ventajas y desventajas, y alternativas a esta tecnología.</field>
       <field name="sectores_id">sector4</field>
-      <field name="sectores">Investigación</field>
+      <field name="sectores">investigacion</field>
       <!--<field name="contrato_id"></field>-->
     </record>
     
