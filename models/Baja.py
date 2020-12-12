@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import timedelta, datetime
 
 
 class Baja (models.Model):
@@ -8,9 +9,15 @@ class Baja (models.Model):
     _description = 'Gestión de baja del empleado'
 
     name = fields.Char(string="Nombre del empleado",required=True, size=20, help="Nombre del empleado que solicita la baja")
-    duracionDias = fields.Integer(string='Duración en días',required=True, help="Tiempo en días que dura la baja")
-    fechaInicio = fields.Datetime(string="Fecha de inicio", required=True, autodate=True)
-    fechaFin = fields.Datetime(string="Fecha de finalización", required=True, autodate=True)
+    duracionDias = fields.Integer(string='Duración en días',required=True, help="Tiempo en días que dura la baja", default=0)
+    fechaInicio = fields.Datetime(string="Fecha de inicio", required=True)
+    fechaFin = fields.Datetime(string="Fecha de finalización")
     motivoBaja = fields.Text(string="Motivo", required=True, size=200, help="Motivo por el que se concedió la baja")
 
     contrato_id = fields.One2many('upobye.contrato', 'baja_id', 'Contrato')
+
+    @api.constrains('fechaInicio','fechaFin','duracionDias')
+    def _fechas_baja(self):
+            added_fecha = self.fechaInicio 
+            added_fecha.day = self.fechaFin.day + self.duracionDias
+            self.write({'fechaFin' : added_fecha})
