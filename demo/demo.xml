@@ -9,7 +9,7 @@
       los empleados de cualquier empresa.</field>
       <field name="sectores_id">sector0</field>
       <field name="sectores">administrativo</field>
-      <!--<field name="contrato_id"></field>-->
+      <field name="contrato_id"></field>
     </record>
     <record id="proyecto1" model="upobye.proyecto">
       <field name="name">Proyecto COVID-19</field>
@@ -17,7 +17,7 @@
       para acabar con la pandemia que hemos vivido este 2020.</field>
       <field name="sectores_id">sector3</field>
       <field name="sectores">sanitario</field>
-      <!--<field name="contrato_id"></field>-->
+      <field name="contrato_id"></field>
     </record>
     <record id="proyecto2" model="upobye.proyecto">
       <field name="name">Proyecto AS</field>
@@ -27,7 +27,7 @@
       ventajas y desventajas, y alternativas a esta tecnología.</field>
       <field name="sectores_id">sector4</field>
       <field name="sectores">investigacion</field>
-      <!--<field name="contrato_id"></field>-->
+      <field name="contrato_id"></field>
     </record>
     
     <!--Demo para sector-->
@@ -39,12 +39,12 @@
     <record id="sector1" model="upobye.sector">
       <field name="name">Sector Agrícola</field>
       <field name="description">Sector dedicado a la agricultura.</field>
-      <!--<field name="proyectos_id"></field>-->
+      <field name="proyectos_id"></field>
     </record>
     <record id="sector2" model="upobye.sector">
       <field name="name">Sector de Transportes</field>
       <field name="description">Sector dedicado al transporte.</field>
-      <!--<field name="proyectos_id"></field>-->
+      <field name="proyectos_id"></field>
     </record>
     <record id="sector3" model="upobye.sector">
       <field name="name">Sector Sanitario</field>
