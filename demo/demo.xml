@@ -1,6 +1,5 @@
 <odoo>
   <data>
-
     <!--Demo para proyecto-->
     <record id="proyecto0" model="upobye.proyecto">
       <field name="name">Proyecto UPOBYE</field>
