@@ -6,6 +6,7 @@
       <form string="Baja">
         <sheet layout="auto">
           <group>
+            <field name="name" />
             <field name="motivoBaja" />
             <field name="fechaInicio" />
             <field name="fechaFin" />
@@ -21,6 +22,7 @@
     <field name="model">upobye.baja</field>
     <field name="arch" type="xml">
       <tree string="Baja">
+        <field name="name" />
         <field name="motivoBaja" />
         <field name="fechaInicio" />
         <field name="fechaFin" />
@@ -42,7 +44,8 @@
     <field name="name">upobye.baja.calendar</field>
     <field name="model">upobye.baja</field>
     <field name="arch" type="xml">
-      <calendar string="Baja" color="motivoBaja" date_start="fechaInicio" date_stop="fechaFin" mode="month">
+      <calendar string="Baja" color="name" date_start="fechaInicio" date_stop="fechaFin" mode="month">
+        <field name="name" />
         <field name="motivoBaja" />
         <field name="duracionDias" />
       </calendar> 
