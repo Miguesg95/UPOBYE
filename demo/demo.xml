@@ -1,60 +1,60 @@
 <odoo>
   <data>
     <!--Demo para proyecto-->
-    <record id="proyecto0" model="upobye.proyecto">
+    <record id="0" model="upobye.proyecto">
       <field name="name">Proyecto UPOBYE</field>
       <field name="description">UPOBYE es un proyecto implementado por alumnos de
       la Universidad Pablo de Olavide para la asignatura de Tecnologías de Sistemas de Información.
       Este módulo pretende ayudar en la gestión de bajas, despidos y periodos de inactividad de 
       los empleados de cualquier empresa.</field>
-      <field name="sectores_id">sector0</field>
+      <field name="sectores_id">0</field>
       <field name="sectores">administrativo</field>
       <field name="contrato_id"></field>
     </record>
-    <record id="proyecto1" model="upobye.proyecto">
+    <record id="1" model="upobye.proyecto">
       <field name="name">Proyecto COVID-19</field>
       <field name="description">COVID-19 es un proyecto en el cual colaboran todos los españoles 
       para acabar con la pandemia que hemos vivido este 2020.</field>
-      <field name="sectores_id">sector3</field>
+      <field name="sectores_id">3</field>
       <field name="sectores">sanitario</field>
       <field name="contrato_id"></field>
     </record>
-    <record id="proyecto2" model="upobye.proyecto">
+    <record id="2" model="upobye.proyecto">
       <field name="name">Proyecto AS</field>
       <field name="description">AS (Alternativas al silicio) es un proyecto en el que han colaborado 
       los alumnos del Equipo 3 de Sistemas Distribuidos de la Universidad Pablo de Olavide. Este proyecto 
       de investigación tiene como objetivo recabar información acerca de la tecnología del silicio y exponer 
       ventajas y desventajas, y alternativas a esta tecnología.</field>
-      <field name="sectores_id">sector4</field>
+      <field name="sectores_id">4</field>
       <field name="sectores">investigacion</field>
       <field name="contrato_id"></field>
     </record>
     
     <!--Demo para sector-->
-    <record id="sector0" model="upobye.sector">
+    <record id="0" model="upobye.sector">
       <field name="name">Sector Administrativo</field>
       <field name="description">Sector dedicado a la administración.</field>
-      <field name="proyectos_id">proyecto0</field>
+      <field name="proyectos_id">0</field>
     </record>
-    <record id="sector1" model="upobye.sector">
+    <record id="1" model="upobye.sector">
       <field name="name">Sector Agrícola</field>
       <field name="description">Sector dedicado a la agricultura.</field>
       <field name="proyectos_id"></field>
     </record>
-    <record id="sector2" model="upobye.sector">
+    <record id="2" model="upobye.sector">
       <field name="name">Sector de Transportes</field>
       <field name="description">Sector dedicado al transporte.</field>
       <field name="proyectos_id"></field>
     </record>
-    <record id="sector3" model="upobye.sector">
+    <record id="3" model="upobye.sector">
       <field name="name">Sector Sanitario</field>
       <field name="description">Sector dedicado a la sanidad.</field>
-      <field name="proyectos_id">proyecto1</field>
+      <field name="proyectos_id">1</field>
     </record>
-    <record id="sector4" model="upobye.sector">
+    <record id="4" model="upobye.sector">
       <field name="name">Sector Investigación</field>
       <field name="description">Sector dedicado a la insgesticación.</field>
-      <field name="proyectos_id">proyecto2</field>
+      <field name="proyectos_id">2</field>
     </record>
 
   </data>
