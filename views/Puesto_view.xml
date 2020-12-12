@@ -11,6 +11,12 @@
             <field name="required" />
             <field name="qualification" />
           </group>
+          <group>
+              <field name="contrato_id" widget="many2many" />
+          </group>
+          <group>
+            <button name="btn_limpiarContratos" string="Quitar contratos" type="object" class="oe_highlight" />
+          </group>
         </sheet>
       </form>
     </field>
