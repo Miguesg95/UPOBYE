@@ -12,7 +12,9 @@ class Proyecto(models.Model):
     sectores_id= fields.Many2many("upobye.sector",string="Sectores de este proyecto")
     sectores = fields.Selection([('agricola','Agricola'),
                       ('transportes', 'Transportes'),
-                      ('sanitario', 'Sanitario'),],
+                      ('sanitario', 'Sanitario'),
+                      ('investigacion','Investigación'),
+                      ('administrativo','Administrativo')],
                       'Sector')
     
     contrato_id = fields.One2many('upobye.contrato', 'proyecto_id', 'Contrato')
