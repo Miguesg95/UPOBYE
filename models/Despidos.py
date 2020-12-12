@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import datetime
 
 
 class Despidos(models.Model):
@@ -17,10 +18,10 @@ class Despidos(models.Model):
                                     ],'Motivo del despido')
 
      contrato_id = fields.One2many('upobye.contrato', 'despido_id', 'Contrato')
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+
+     @api.constrains('start','end')
+     def _fecha_despidos(self):
+          t1 = datetime.datetime.strptime(self.start, '%Y-%m-%d %H:%M:%S')
+          t2 = datetime.datetime.strptime(self.end, '%Y-%m-%d %H:%M:%S')
+          if t2<t1:
+               raise models.ValidationError('La fecha fin debe ser posterior a la fecha inicio')
