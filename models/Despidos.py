@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import datetime
 
 
 class Despidos(models.Model):
@@ -9,18 +10,16 @@ class Despidos(models.Model):
 
      name = fields.Integer(string="Finiquito",required=True,help="Indemnización")
      motivo = fields.Text()
-     start = fields.Datetime('Starts', required=True, autodate =True)
-     end = fields.Datetime('Ends', required=True, autodate =True)
+     start = fields.Datetime('Starts', required=True)
+     end = fields.Datetime('Ends', required=True)
      motivo_despido = fields.Selection([('jubilacion','Jubilación'),
                                     ('fin de contrato','Fin de contrato'),
                                     ('baja indefinida','Baja indefinida')
                                     ],'Motivo del despido')
 
      contrato_id = fields.One2many('upobye.contrato', 'despido_id', 'Contrato')
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+
+     @api.constrains('start','end')
+     def _fecha_despidos(self):
+          if self.end<self.start:
+               raise models.ValidationError('La fecha fin debe ser posterior a la fecha inicio')
