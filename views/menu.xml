@@ -1,21 +1,24 @@
 <odoo>
     <!-- Top menu item -->
-    <menuitem name="upobye" id="main_upobye_menu" groups="group_upobye_manager"/>
+    <menuitem name="UPOBYE" id="main_upobye_menu" groups="group_upobye_manager"/>
 
     <!-- menu categories -->
-    <menuitem name="upobye" id="upobye_menu" groups="group_upobye_manager" parent="main_upobye_menu"/>
+    <menuitem name="Gestión de Empleados" id="gestempleados_menu" parent="main_upobye_menu" groups="group_upobye_manager"/>
+    <menuitem name="Gestión de Contratos" id="gestcontrato_menu" parent="main_upobye_menu" groups="group_upobye_manager"/>
+    <menuitem name="Gestión de proyectos" id="gestproyectos_menu" parent="main_upobye_menu" groups="group_upobye_manager"/>
+    <menuitem name="Gestión de Despidos" id="gestdespidos_menu" parent="main_upobye_menu" groups="group_upobye_manager"/>
 
     <!-- actions -->
-    <menuitem name="Sectores" id="sectores_menu" parent="upobye_menu" groups="group_upobye_manager" action="sector_list_action"/>
-    <menuitem name="Proyectos" id="proyectos_menu" parent="upobye_menu" groups="group_upobye_manager" action="proyecto_list_action"/>
-    <menuitem name="Experiencia" id="experiencia_menu" parent="upobye_menu" groups="group_upobye_manager" action="experiencia_list_action"/>
-    <menuitem name="Baja" id="baja_menu" parent="upobye_menu" groups="group_upobye_manager" action="baja_list_action"/>
-    <menuitem name="Idioma" id="idioma_menu" parent="upobye_menu" groups="group_upobye_manager" action="idioma_list_action"/>
-    <menuitem name="Titulacion" id="titulacion_menu" parent="upobye_menu" groups="group_upobye_manager" action="titulacion_list_action"/>
-    <menuitem name="Despidos" id="despidos_menu" parent="upobye_menu" groups="group_upobye_manager" action="despidos_list_action"/>
-    <menuitem name="Puesto" id="puesto_menu" parent="upobye_menu" groups="group_upobye_manager" action="puesto_list_action"/>
-    <menuitem name="Tipo de Contrato" id="tipo_contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="TipoContrato_list_action"/>
-    <menuitem name="Tipo de Despido" id="tipo_despido_menu" parent="upobye_menu" groups="group_upobye_manager" action="TipoDespido_list_action"/>
-    <menuitem name="Contrato" id="contrato_menu" parent="upobye_menu" groups="group_upobye_manager" action="Contrato_list_action"/>
+    <menuitem name="Experiencia" id="experiencia_menu" parent="gestempleados_menu" groups="group_upobye_manager" action="experiencia_list_action"/>
+    <menuitem name="Idioma" id="idioma_menu" parent="gestempleados_menu" groups="group_upobye_manager" action="idioma_list_action"/>
+    <menuitem name="Titulación" id="titulacion_menu" parent="gestempleados_menu" groups="group_upobye_manager" action="titulacion_list_action"/>
+    <menuitem name="Contrato" id="contrato_menu" parent="gestcontrato_menu" groups="group_upobye_manager" action="Contrato_list_action"/>
+    <menuitem name="Baja" id="baja_menu" parent="gestcontrato_menu" groups="group_upobye_manager" action="baja_list_action"/>
+    <menuitem name="Puesto" id="puesto_menu" parent="gestcontrato_menu" groups="group_upobye_manager" action="puesto_list_action"/>
+    <menuitem name="Tipo de Contrato" id="tipo_contrato_menu" parent="gestcontrato_menu" groups="group_upobye_manager" action="TipoContrato_list_action"/>
+    <menuitem name="Proyectos" id="proyectos_menu" parent="gestproyectos_menu" groups="group_upobye_manager" action="proyecto_list_action"/>
+    <menuitem name="Sectores" id="sectores_menu" parent="gestproyectos_menu" groups="group_upobye_manager" action="sector_list_action"/>
+    <menuitem name="Despidos" id="despidos_menu" parent="gestdespidos_menu" groups="group_upobye_manager" action="despidos_list_action"/>
+    <menuitem name="Tipo de Despido" id="tipo_despido_menu" parent="gestdespidos_menu" groups="group_upobye_manager" action="TipoDespido_list_action"/>
 
 </odoo>
