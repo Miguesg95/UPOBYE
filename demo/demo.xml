@@ -5,30 +5,58 @@
     <record id="proyecto0" model="upobye.proyecto">
       <field name="name">Proyecto UPOBYE</field>
       <field name="description">UPOBYE es un proyecto implementado por alumnos de
+<<<<<<< HEAD
         la Universidad Pablo de Olavide para la asignatura de Tecnologías de Sistemas de Información.
         Este módulo pretende ayudar en la gestión de bajas, despidos y periodos de inactividad de 
         los empleados de cualquier empresa.
       </field>
       <!--<field name="sectores_id" ref='sector0'/>-->
       <field name="sectores">administrativo</field>
+=======
+      la Universidad Pablo de Olavide para la asignatura de Tecnologías de Sistemas de Información.
+      Este módulo pretende ayudar en la gestión de bajas, despidos y periodos de inactividad de 
+      los empleados de cualquier empresa.
+      </field>
+      <field name="sectores_id" ref='sector0'/>
+      <field name="sectores">administrativo</field>
+      <field name="contrato_id" widget="one2many"></field>
+>>>>>>> main
     </record>
     <record id="proyecto1" model="upobye.proyecto">
       <field name="name">Proyecto COVID-19</field>
       <field name="description">COVID-19 es un proyecto en el cual colaboran todos los españoles 
+<<<<<<< HEAD
         para acabar con la pandemia que hemos vivido este 2020.
       </field>
       <!--<field name="sectores_id" ref="sector3" />-->
       <field name="sectores">sanitario</field>
+=======
+      para acabar con la pandemia que hemos vivido este 2020.
+      </field>
+      <field name="sectores_id" ref="sector3" />
+      <field name="sectores">sanitario</field>
+      <field name="contrato_id" widget="one2many"></field>
+>>>>>>> main
     </record>
     <record id="proyecto2" model="upobye.proyecto">
       <field name="name">Proyecto AS</field>
       <field name="description">AS (Alternativas al silicio) es un proyecto en el que han colaborado 
+<<<<<<< HEAD
         los alumnos del Equipo 3 de Sistemas Distribuidos de la Universidad Pablo de Olavide. Este proyecto 
         de investigación tiene como objetivo recabar información acerca de la tecnología del silicio y exponer 
         ventajas y desventajas, y alternativas a esta tecnología.
       </field>
       <!--<field name="sectores_id" ref="sector4" />-->
       <field name="sectores">investigacion</field>
+=======
+      los alumnos del Equipo 3 de Sistemas Distribuidos de la Universidad Pablo de Olavide. Este proyecto 
+      de investigación tiene como objetivo recabar información acerca de la tecnología del silicio y exponer 
+      ventajas y desventajas, y alternativas a esta tecnología.
+      </field>
+      <field name="sectores_id" ref="sector4" />
+      <field name="sectores">investigacion</field>
+      <field name="contrato_id" widget="one2many"></field>
+>>>>>>> main
     </record>
 
     <!--Demo para sector-->
@@ -40,15 +68,27 @@
     <record id="sector1" model="upobye.sector">
       <field name="name">Sector Agrícola</field>
       <field name="description">Sector dedicado a la agricultura.</field>
+<<<<<<< HEAD
+=======
+      <field name="proyectos_id" ref="" />
+>>>>>>> main
     </record>
     <record id="sector2" model="upobye.sector">
       <field name="name">Sector de Transportes</field>
       <field name="description">Sector dedicado al transporte.</field>
+<<<<<<< HEAD
+=======
+      <field name="proyectos_id" ref="" />
+>>>>>>> main
     </record>
     <record id="sector3" model="upobye.sector">
       <field name="name">Sector Sanitario</field>
       <field name="description">Sector dedicado a la sanidad.</field>
+<<<<<<< HEAD
       <field name="proyectos_id" ref="proyecto1" />
+=======
+      <field name="proyectos_id" wref="proyecto1" />
+>>>>>>> main
     </record>
     <record id="sector4" model="upobye.sector">
       <field name="name">Sector Investigación</field>
