@@ -7,6 +7,7 @@ class Baja (models.Model):
     _name = 'upobye.baja'
     _description = 'Gestión de baja del empleado'
 
+    name = fields.Char(string="Nombre del empleado",required=True, size=20, help="Nombre del empleado que solicita la baja")
     duracionDias = fields.Integer(string='Duración en días',required=True, help="Tiempo en días que dura la baja")
     fechaInicio = fields.Datetime(string="Fecha de inicio", required=True, autodate=True)
     fechaFin = fields.Datetime(string="Fecha de finalización", required=True, autodate=True)

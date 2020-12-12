@@ -1,9 +1,9 @@
 <odoo>
     <!-- Top menu item -->
-    <menuitem name="upobye" id="main_upobye_menu" groups="group_upobye_manager"/>
+    <menuitem name="UPOBYE" id="main_upobye_menu" groups="group_upobye_manager"/>
 
     <!-- menu categories -->
-    <menuitem name="upobye" id="upobye_menu" groups="group_upobye_manager" parent="main_upobye_menu"/>
+    <menuitem name="UPOBYE" id="upobye_menu" groups="group_upobye_manager" parent="main_upobye_menu"/>
 
     <!-- actions -->
     <menuitem name="Sectores" id="sectores_menu" parent="upobye_menu" groups="group_upobye_manager" action="sector_list_action"/>
