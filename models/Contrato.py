@@ -7,7 +7,7 @@ class Contrato(models.Model):
     _name = 'upobye.contrato'
     _description = 'upobye.contrato'
     
-    sueldo  = fields.Float(string = "Sueldo", help="Sueldo del empleado")
+    sueldo  = fields.Float(string = "Sueldo", help="Sueldo del empleado", default=1110.00)
     jornada = fields.Char(string = "Duración de jornada", help="Media jornada, jornada completa...")
     fecha = fields.Date(default = "") 
     dias_libres = fields.Integer(string = "Días libres")
@@ -20,3 +20,16 @@ class Contrato(models.Model):
     puesto_id = fields.Many2one('upobye.puesto', string="Puesto")
     proyecto_id = fields.Many2one('upobye.proyecto', string='Proyecto')
     empleado_id = fields.One2many('upobye.empleado', 'contrato_id', 'Empleado')
+
+    @api.onchange('sueldo')
+    def onchange_contrato(self):
+        resultado={}
+        if self.sueldo < 1109:
+            resultado= {
+                'value': {'sueldo':1109},
+                'warning': {
+                    'title':'Sueldo Incorrecto',
+                    'message':'El salario mínimo legal es de 1109 Euros'
+                }
+            }
+            return resultado
