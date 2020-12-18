@@ -72,11 +72,7 @@
     </record>
 
     <!--Demo para proyecto-->
-<<<<<<< Updated upstream
     <record id="proyecto0" model="upobye.proyecto">
-=======
-   <!-- <record id="0" model="upobye.proyecto">
->>>>>>> Stashed changes
       <field name="name">Proyecto UPOBYE</field>
       <field name="description">UPOBYE es un proyecto implementado por alumnos de
       la Universidad Pablo de Olavide para la asignatura de Tecnologías de Sistemas de Información.
@@ -98,15 +94,9 @@
       ventajas y desventajas, y alternativas a esta tecnología.
       </field>
     </record>
-<<<<<<< Updated upstream
 
     <!--Demo para sector-->
     <record id="sector0" model="upobye.sector">
-=======
-    -->
-    <!--Demo para sector-->
-    <!--<record id="0" model="upobye.sector">
->>>>>>> Stashed changes
       <field name="name">Sector Administrativo</field>
       <field name="description">Sector dedicado a la administración.</field>
     </record>
