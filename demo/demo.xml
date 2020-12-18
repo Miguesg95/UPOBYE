@@ -117,7 +117,7 @@
       <field name="description">Sector dedicado a la insgesticación.</field>
     </record>
 
-    <!--Demo para sector-->
+    <!--Demo para contrato-->
     <record id="contrato0" model="upobye.contrato">
       <field name="proyecto_id" ref="proyecto0"/>
     </record>
