@@ -6,8 +6,8 @@
                     <div class="page">
                         <div class="oe_structure" />
                         <div class="row" style="font-size: 24px; margin-bottom: 20px;">
-                            <span style="font-weight: bold; text-decoration: underline; ">ID Card:</span>
-                            <span style="color: #999999;" t-field="o.motivo" />
+                            <span style="font-weight: bold; text-decoration: underline; ">Carta de despido:</span>
+                            <span style="color: #999999;" t-field="o.contrato_id" />
                         </div>
                         <div class="row">
                             <div class="col-xs-2" style="margin: auto; text-align: center; padding-left: 15px; padding-right: 15px; border-right: 2px solid #cccccc;">
@@ -18,10 +18,10 @@
                                     <tr>
                                         <td>
                                             <p>
-                                                <strong>ID Card: </strong>
+                                                <strong>Motivo: </strong>
                                             </p>
                                             <p>
-                                                <strong>State: </strong>
+                                                <strong>Motivo del despido: </strong>
                                             </p>
                                         </td>
                                         <td style="padding-left: 10px;">
@@ -39,11 +39,12 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Titulo</th>
-                                        <th>Inicio</th>
-                                        <th>Fin</th>
-                                        <th>Ocupacion total</th>
-                                        <th>Instructor</th>
+                                        <th>Sueldo</th>
+                                        <th>Jornada</th>
+                                        <th>Fecha de comienzo</th>
+                                        <th>Tiempo de duración</th>
+                                        <th>Activo:</th>
+                                        <th>Empleado afectado </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -63,6 +64,9 @@
                                             </td>
                                             <td>
                                                 <p t-field="contrato.activo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.empleado_id" />
                                             </td>
                                         </tr>
                                     </t>
