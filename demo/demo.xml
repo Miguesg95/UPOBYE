@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
+    <!-- Puesto y Tipo Contrato-->
+    <record id="puesto0" model="upobye.puesto">
+      <field name="name">Ceo</field>
+      <field name="ID">0001</field>
+      <field name="required">true</field>
+      <field name="qualification">Ingles B2, Ingeniero Informatico, Experiencia 4 años</field>
+    </record>
+    
+    <record id="puesto1" model="upobye.puesto">
+      <field name="name">Programador</field>
+      <field name="ID">0002</field>
+      <field name="required">false</field>
+      <field name="qualification">Ingles B2, Ingeniero Informatico</field>
+    </record>
+
+    <record id="tipocontrato0" model="upobye.tipo_contrato">
+      <field name="name">Indefinido</field>
+      <field name="tipo">indOrdinario</field>
+      <field name="description">Contrato indefinido estandar</field>
+    </record>
+
+    <record id="tipocontrato1" model="upobye.tipo_contrato">
+      <field name="name">Eventual</field>
+      <field name="tipo">contEventual</field>
+      <field name="description">Contrato Eventual</field>
+    </record>
     <!--Demo para Idioma-->
     <record id="idioma0" model="upobye.idioma">
       <field name="name">Ingles</field>
