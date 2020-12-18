@@ -39,7 +39,7 @@
                             Datos del contrato <span t-field="o.contrato_id" />
                         </div>
                         <div t-if="o.contrato_id" id="desglose_despido" class="row" style="margin-top: 10px;">
-                            <table class="table">
+                            <table style="background-color: light-gray border-collapse: collapse" class="table">
                                 <thead>
                                     <tr>
                                         <th>Sueldo</th>

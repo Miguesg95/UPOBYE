@@ -11,6 +11,7 @@
             <field name="fechaInicio" />
             <field name="fechaFin" />
             <field name="duracionDias" />
+            <field name="contrato_id" widget="many2one"/>
           </group>
         </sheet>
       </form>

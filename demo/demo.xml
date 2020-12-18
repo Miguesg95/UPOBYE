@@ -27,6 +27,7 @@
       <field name="tipo">contEventual</field>
       <field name="description">Contrato Eventual</field>
     </record>
+
     <!--Demo para Idioma-->
     <record id="idioma0" model="upobye.idioma">
       <field name="name">Ingles</field>
@@ -69,6 +70,40 @@
     <record id="titulo4" model="upobye.titulacion">
       <field name="name">Grado superior DAM</field>
       <field name="certificacion">I.E.S. Nervión</field>
+    </record>
+
+    <!--Demo para Experiencia-->
+    <record id="experiencia0" model="upobye.experiencia">
+      <field name="name">Churrero</field>
+      <field name="certificacion">Churrería Hermanos Pernía</field>
+      <field name="duracionDias">25</field>
+    </record>
+    <record id="experiencia1" model="upobye.experiencia">
+      <field name="name">Camarero</field>
+      <field name="certificacion">Cafetería UPO</field>
+      <field name="duracionDias">40</field>
+    </record>
+    <record id="experiencia2" model="upobye.experiencia">
+      <field name="name">Profesor</field>
+      <field name="certificacion">UPO</field>
+      <field name="duracionDias">70</field>
+    </record>
+
+    <!--Demo para Baja-->
+    <record id="baja0" model="upobye.baja">
+      <field name="name">empleado0</field>
+      <field name="duracionDias">5</field>
+      <field name="motivoBaja">Se cayó jugando.</field>
+    </record>
+    <record id="baja1" model="upobye.baja">
+      <field name="name">empleado1</field>
+      <field name="duracionDias">13</field>
+      <field name="motivoBaja">Se marchó y a su barco lo llamó libertad.</field>
+    </record>
+    <record id="baja2" model="upobye.baja">
+      <field name="name">empleado2</field>
+      <field name="duracionDias">10</field>
+      <field name="motivoBaja">Ha salido un juego nuevo.</field>
     </record>
 
     <!--Demo para proyecto-->

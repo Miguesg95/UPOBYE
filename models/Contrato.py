@@ -14,7 +14,7 @@ class Contrato(models.Model):
     tiempo = fields.Date(help="Fecha de cumplimiento de contrato")
     activo = fields.Boolean(string="Activo", help="Indica si el empleado se encuentra activo")
 
-    baja_id = fields.Many2one('upobye.baja', string="Bajas")
+    baja_id = fields.One2many('upobye.baja', 'contrato_id', 'Bajas')
     despido_id = fields.Many2one('upobye.despidos', string="Despidos")
     tipo_contrato_id = fields.Many2one('upobye.tipo_contrato', string="Tipo del contrato")
     puesto_id = fields.Many2one('upobye.puesto', string="Puesto")
