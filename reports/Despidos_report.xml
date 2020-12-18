@@ -76,22 +76,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div t-if="o.empleado_id" id="detalle_empleado" class="row" style="margin-top: 10px;">
-                            <table>
-                                <thead>
-                                    <th>Nombre completo</th>
-                                    <th>DNI</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>empleado_id.name</td>
-                                        <td>empleado_id.name</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <th></th
-                            </thead>
-                        </div>
+                        
                     </div>
                 </t>
             </t>
