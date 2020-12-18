@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
+    <!--Demo para Idioma-->
+    <record id="idioma0" model="upobye.idioma">
+      <field name="name">Ingles</field>
+      <field name="certificacion">Oxford</field>
+    </record>
+    <record id="idioma1" model="upobye.idioma">
+      <field name="name">Ingles</field>
+      <field name="certificacion">Cambridge</field>
+    </record>
+    <record id="idioma2" model="upobye.idioma">
+      <field name="name">Frances</field>
+      <field name="certificacion">DELF</field>
+    </record>
+    <record id="idioma3" model="upobye.idioma">
+      <field name="name">Italiano</field>
+      <field name="certificacion">PLIDA</field>
+    </record>
+    <record id="idioma4" model="upobye.idioma">
+      <field name="name">Chino</field>
+      <field name="certificacion">HSK</field>
+    </record>
+
+    <!--Demo para Titulacion-->
+    <record id="titulo0" model="upobye.titulacion">
+      <field name="name">Ingenieria informatica</field>
+      <field name="certificacion">US</field>
+    </record>
+    <record id="titulo1" model="upobye.titulacion">
+      <field name="name">Ingenieria informatica</field>
+      <field name="certificacion">UPO</field>
+    </record>
+    <record id="titulo2" model="upobye.titulacion">
+      <field name="name">Grado medio Sistemas microinformaticos</field>
+      <field name="certificacion">I.E.S. Cristóbal de Monroy</field>
+    </record>
+    <record id="titulo3" model="upobye.titulacion">
+      <field name="name">Grado superior en  Informática y Comunicaciones</field>
+      <field name="certificacion"> I.E.S. Abdera</field>
+    </record>
+    <record id="titulo4" model="upobye.titulacion">
+      <field name="name">Grado superior DAM</field>
+      <field name="certificacion">I.E.S. Nervión</field>
+    </record>
+
     <!--Demo para proyecto-->
     <record id="proyecto0" model="upobye.proyecto">
       <field name="name">Proyecto UPOBYE</field>
@@ -9,18 +53,12 @@
       Este módulo pretende ayudar en la gestión de bajas, despidos y periodos de inactividad de 
       los empleados de cualquier empresa.
       </field>
-      <field name="sectores_id" ref='sector0'/>
-      <field name="sectores">administrativo</field>
-      <field name="contrato_id" widget="one2many"></field>
     </record>
     <record id="proyecto1" model="upobye.proyecto">
       <field name="name">Proyecto COVID-19</field>
       <field name="description">COVID-19 es un proyecto en el cual colaboran todos los españoles 
       para acabar con la pandemia que hemos vivido este 2020.
       </field>
-      <field name="sectores_id" ref="sector3" />
-      <field name="sectores">sanitario</field>
-      <field name="contrato_id" widget="one2many"></field>
     </record>
     <record id="proyecto2" model="upobye.proyecto">
       <field name="name">Proyecto AS</field>
@@ -29,80 +67,33 @@
       de investigación tiene como objetivo recabar información acerca de la tecnología del silicio y exponer 
       ventajas y desventajas, y alternativas a esta tecnología.
       </field>
-      <field name="sectores_id" ref="sector4" />
-      <field name="sectores">investigacion</field>
-      <field name="contrato_id" widget="one2many"></field>
     </record>
 
     <!--Demo para sector-->
     <record id="sector0" model="upobye.sector">
       <field name="name">Sector Administrativo</field>
       <field name="description">Sector dedicado a la administración.</field>
-      <field name="proyectos_id" ref="proyecto0"/>
     </record>
     <record id="sector1" model="upobye.sector">
       <field name="name">Sector Agrícola</field>
       <field name="description">Sector dedicado a la agricultura.</field>
-      <field name="proyectos_id" ref="" />
     </record>
     <record id="sector2" model="upobye.sector">
       <field name="name">Sector de Transportes</field>
       <field name="description">Sector dedicado al transporte.</field>
-      <field name="proyectos_id" ref="" />
     </record>
     <record id="sector3" model="upobye.sector">
       <field name="name">Sector Sanitario</field>
       <field name="description">Sector dedicado a la sanidad.</field>
-      <field name="proyectos_id" wref="proyecto1" />
     </record>
     <record id="sector4" model="upobye.sector">
       <field name="name">Sector Investigación</field>
       <field name="description">Sector dedicado a la insgesticación.</field>
-      <field name="proyectos_id" ref="proyecto2" />
     </record>
 
-     <!--Demo para Idiona-->
-    <record id="idioma0" model="upobye.idioma">
-      <field name="name">Ingles</field>
-      <field name="certificacion">Oxford</field>
-    </record>
-    <record id="idioma1" model="upobye.sector">
-      <field name="name">Ingles</field>
-      <field name="description">Cambridge</field>
-    </record>
-    <record id="idioma2" model="upobye.sector">
-      <field name="name">Frances</field>
-      <field name="certificacion">DELF</field>
-    </record>
-    <record id="idioma3" model="upobye.sector">
-      <field name="name">Italiano</field>
-      <field name="certificacion">PLIDA</field>
-    </record>
-    <record id="idioma4" model="upobye.sector">
-      <field name="name">Chino</field>
-      <field name="certificacion">HSK</field>
-    </record>
-
-         <!--Demo para Titulacion-->
-    <record id="titulo0" model="upobye.idioma">
-      <field name="name">Ingenieria informatica</field>
-      <field name="certificacion">US</field>
-    </record>
-    <record id="titulo1" model="upobye.sector">
-      <field name="name">Ingenieria informatica</field>
-      <field name="description">UPO</field>
-    </record>
-    <record id="titulo2" model="upobye.sector">
-      <field name="name">Grado medio Sistemas microinformaticos</field>
-      <field name="certificacion">I.E.S. Cristóbal de Monroy</field>
-    </record>
-    <record id="titulo3" model="upobye.sector">
-      <field name="name">Grado superior en  Informática y Comunicaciones</field>
-      <field name="certificacion"> I.E.S. Abdera</field>
-    </record>
-    <record id="titulo4" model="upobye.sector">
-      <field name="name">Grado superior DAM</field>
-      <field name="certificacion">I.E.S. Nervión</field>
+    <!--Demo para sector-->
+    <record id="contrato0" model="upobye.contrato">
+      <field name="proyecto_id" ref="proyecto0"/>
     </record>
   </data>
 </odoo>
