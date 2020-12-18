@@ -8,7 +8,7 @@
       <field name="required">true</field>
       <field name="qualification">Ingles B2, Ingeniero Informatico, Experiencia 4 años</field>
     </record>
-    
+
     <record id="puesto1" model="upobye.puesto">
       <field name="name">Programador</field>
       <field name="ID">0002</field>
@@ -158,7 +158,22 @@
       <field name="tipo_contrato_id" ref="tipocontrato0"/>
       <field name="puesto_id" ref="puesto0"/>
     </record>
-
+    <!--Demo para despidos-->
+    <record id="despido0" model="upobye.despidos">
+      <field name="name">Jubilación</field>
+      <field name="description">El empleado pasa a ser desempleado para tramitar su jubilación</field>
+      
+    </record>
+    <record id="despido1" model="upobye.despidos">
+      <field name="name">FIn de Contrato</field>
+      <field name="description">El contrato ha llegado a su fecha fin</field>
+    
+    </record>
+    <record id="despido2" model="upobye.despidos">
+      <field name="name">Baja Indefinida</field>
+      <field name="description">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
+    
+    </record>
   </data>
 </odoo>
 
