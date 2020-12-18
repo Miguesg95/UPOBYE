@@ -114,13 +114,14 @@
     </record>
     <record id="sector4" model="upobye.sector">
       <field name="name">Sector Investigación</field>
-      <field name="description">Sector dedicado a la insgesticación.</field>
+      <field name="description">Sector dedicado a la insvesticación.</field>
     </record>
 
     <!--Demo para contrato-->
     <record id="contrato0" model="upobye.contrato">
       <field name="proyecto_id" ref="proyecto0"/>
     </record>
+
     <record id="idioma1" model="upobye.sector">
       <field name="name">Ingles</field>
       <field name="description">Cambridge</field>
