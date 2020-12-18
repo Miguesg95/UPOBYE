@@ -114,10 +114,10 @@
     </record>
     <record id="sector4" model="upobye.sector">
       <field name="name">Sector Investigación</field>
-      <field name="description">Sector dedicado a la insvesticación.</field>
+      <field name="description">Sector dedicado a la insvestigación.</field>
     </record>
 
-    <!--Demo para contrato-->
+    <!--Demo para Contrato-->
     <record id="contrato0" model="upobye.contrato">
       <field name="proyecto_id" ref="proyecto0"/>
     </record>
