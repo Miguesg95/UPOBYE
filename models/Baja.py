@@ -8,13 +8,13 @@ class Baja (models.Model):
     _name = 'upobye.baja'
     _description = 'Gestión de baja del empleado'
 
-    name = fields.Char(string="Nombre del empleado",required=True, size=20, help="Nombre del empleado que solicita la baja")
+    name = fields.Char(string="Nombre del empleado",required=True, size=200, help="Nombre del empleado que solicita la baja")
     duracionDias = fields.Integer(string='Duración en días',required=True, help="Tiempo en días que dura la baja", default=0)
-    fechaInicio = fields.Datetime(string="Fecha de inicio", required=True)
+    fechaInicio = fields.Datetime(string="Fecha de inicio", required=True, default=fields.Date.today())
     fechaFin = fields.Datetime(string="Fecha de finalización", readonly=True)
     motivoBaja = fields.Text(string="Motivo", required=True, size=200, help="Motivo por el que se concedió la baja")
 
-    contrato_id = fields.One2many('upobye.contrato', 'baja_id', 'Contrato')
+    contrato_id = fields.Many2one('upobye.contrato', string="Contrato")
 
     @api.constrains('fechaInicio')
     def _fechas_baja(self):
