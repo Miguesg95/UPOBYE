@@ -120,6 +120,8 @@
     <!--Demo para Contrato-->
     <record id="contrato0" model="upobye.contrato">
       <field name="proyecto_id" ref="proyecto0"/>
+      <field name="tipo_contrato_id" ref="tipocontrato0"/>
+      <field name="puesto_id" ref="puesto0"/>
     </record>
 
   </data>
