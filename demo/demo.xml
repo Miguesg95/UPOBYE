@@ -117,7 +117,7 @@
       <field name="description">Sector dedicado a la insvesticación.</field>
     </record>
 
-    <!--Demo para contrato-->
+    <!--Demo para Contrato-->
     <record id="contrato0" model="upobye.contrato">
       <field name="proyecto_id" ref="proyecto0"/>
     </record>
