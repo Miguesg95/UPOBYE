@@ -7,12 +7,8 @@
                         <div class="oe_structure" />
                         <div class="row" style="font-size: 24px; margin-bottom: 20px;">
                             <span style="font-weight: bold; text-decoration: underline; ">Carta de despido:</span>
-                            <span style="color: #999999;" t-field="o.contrato_id" />
                         </div>
                         <div class="row">
-                            <div class="col-xs-2" style="margin: auto; text-align: center; padding-left: 15px; padding-right: 15px; border-right: 2px solid #cccccc;">
-                                <p t-field="o.name" style="font-size: 14px; font-weight: bold;" />
-                            </div>
                             <div class="col-xs-8" style="text-align: left; margin: auto; padding-left: 15px; padding-top: 10px;">
                                 <table>
                                     <tr>
@@ -20,12 +16,19 @@
                                             <p>
                                                 <strong>Motivo: </strong>
                                             </p>
+                                        </td>
+                                        <td>
                                             <p>
                                                 <strong>Motivo del despido: </strong>
                                             </p>
                                         </td>
+                                    </tr>
+                                    <tr>
                                         <td style="padding-left: 10px;">
                                             <p t-field="o.motivo" />
+
+                                        </td>
+                                        <td>
                                             <p t-field="o.motivo_despido" />
                                         </td>
                                     </tr>
@@ -33,9 +36,9 @@
                             </div>
                         </div>
                         <div t-if="o.contrato_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
-                            Clases reservadas de <span t-field="o.name" />
+                            Datos del contrato <span t-field="o.contrato_id" />
                         </div>
-                        <div t-if="o.contrato_id" id="clases_reservadas" class="row" style="margin-top: 10px;">
+                        <div t-if="o.contrato_id" id="desglose_despido" class="row" style="margin-top: 10px;">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -72,6 +75,22 @@
                                     </t>
                                 </tbody>
                             </table>
+                        </div>
+                        <div t-if="o.empleado_id" id="detalle_empleado" class="row" style="margin-top: 10px;">
+                            <table>
+                                <thead>
+                                    <th>Nombre completo</th>
+                                    <th>DNI</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>empleado_id.name</td>
+                                        <td>empleado_id.name</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <th></th
+                            </thead>
                         </div>
                     </div>
                 </t>
