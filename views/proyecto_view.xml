@@ -9,8 +9,13 @@
           <group>
             <field name="name" />
             <field name="description" />
-            <field name="sectores"/>
-            <field name="sectores_id" widget="many2many" />
+            <field name="sectores_id" widget="many2many">
+              <tree>
+                <field name="name" />
+                <field name="description" />
+              </tree>
+            </field>
+            <field name="contrato_id" widget="one2many" />
           </group>
         </sheet>
       </form>
@@ -24,12 +29,11 @@
       <tree string="Proyectos">
         <field name="name" />
         <field name="description" />
-        <field name="sectores"/>
         <field name="sectores_id" widget="many2many" />
       </tree>
     </field>
   </record>
-  
+
   <record id="proyecto_list_action" model="ir.actions.act_window">
     <field name="name">Proyecto</field>
     <field name="res_model">upobye.proyecto</field>
@@ -38,5 +42,5 @@
       <p class="o_view_nocontent_smiling_face">Crea el primer proyecto</p>
     </field>
   </record>
-  
+
 </odoo>
