@@ -37,49 +37,46 @@
                         </div>
                         <div t-if="o.contrato_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
                             Datos del contrato <span t-field="o.contrato_id" />
-                        </div>
-                        <div t-if="o.contrato_id" id="desglose_despido" class="row" style="margin-top: 10px;">
-                            <table style="background-color: light-gray border-collapse: collapse" class="table">
-                                <thead>
+                        <table style="background-color: light-gray border-collapse: collapse" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Sueldo</th>
+                                    <th>Jornada</th>
+                                    <th>Fecha de comienzo</th>
+                                    <th>Tiempo de duración</th>
+                                    <th>Activo:</th>
+                                    <th>Empleado afectado </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.contrato_id" t-as="contrato">
                                     <tr>
-                                        <th>Sueldo</th>
-                                        <th>Jornada</th>
-                                        <th>Fecha de comienzo</th>
-                                        <th>Tiempo de duración</th>
-                                        <th>Activo:</th>
-                                        <th>Empleado afectado </th>
+                                        <td>
+                                            <p t-field="contrato.sueldo" />
+                                        </td>
+                                        <td>
+                                            <p t-field="contrato.jornada" />
+                                        </td>
+                                        <td>
+                                            <p t-field="contrato.fecha" />
+                                        </td>
+                                        <td>
+                                            <p t-field="contrato.tiempo" />
+                                        </td>
+                                        <td>
+                                            <p t-field="contrato.activo" />
+                                        </td>
+                                        <td>
+                                            <p t-field="contrato.empleado_id" />
+                                        </td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    <t t-foreach="o.contrato_id" t-as="contrato">
-                                        <tr>
-                                            <td>
-                                                <p t-field="contrato.sueldo" />
-                                            </td>
-                                            <td>
-                                                <p t-field="contrato.jornada" />
-                                            </td>
-                                            <td>
-                                                <p t-field="contrato.fecha" />
-                                            </td>
-                                            <td>
-                                                <p t-field="contrato.tiempo" />
-                                            </td>
-                                            <td>
-                                                <p t-field="contrato.activo" />
-                                            </td>
-                                            <td>
-                                                <p t-field="contrato.empleado_id" />
-                                            </td>
-                                        </tr>
-                                    </t>
-                                </tbody>
-                            </table>
-                        </div>
-                        
+                                </t>
+                            </tbody>
+                        </table>
                     </div>
-                </t>
+                </div>
             </t>
         </t>
-    </template>
+    </t>
+</template>
 </odoo>
