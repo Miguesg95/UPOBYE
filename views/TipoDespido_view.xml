@@ -9,6 +9,7 @@
           <group>
             <field name="forma"/>
             <field name="name" />
+            <field name="despido_id" widget="one2many" />
           </group>
         </sheet>
       </form>
@@ -22,6 +23,7 @@
       <tree string="TipoDespido">
         <field name="forma"/>
         <field name="name" />
+        <field name="despido_id" widget="one2many" />
       </tree>
     </field>
   </record>

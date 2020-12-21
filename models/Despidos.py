@@ -18,7 +18,7 @@ class Despidos(models.Model):
                                     ],'Motivo del despido')
 
      contrato_id = fields.Many2one('upobye.contrato', string="Contrato")
-     tipodespido_id = fields.One2many('upobye.tipo_despido','despido_id','tipoDespido')
+     tipodespido_id = fields.Many2one('upobye.tipo_despido', string="Tipo de despido")
      @api.constrains('start','end')
      def _fecha_despidos(self):
           if self.end<self.start:

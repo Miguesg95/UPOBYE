@@ -165,20 +165,14 @@
       <!--Demo para despidos-->
     <record id="despido0" model="upobye.despidos">
       <field name="name">2000</field>
-      <field name="motivo">El empleado pasa a ser desempleado para tramitar su jubilación</field>
-      <field name="motivo_despido">jubilación</field>
       <field name="tipodespido_id" ref="tipodespido0"/>
     </record>
     <record id="despido1" model="upobye.despidos">
       <field name="name">40000</field>
-      <field name="motivo">El empleado pasa a ser desempleado para tramitar su jubilación</field>
-      <field name="motivo_despido">fin de contrato</field>
       <field name="tipodespido_id" ref="tipodespido1"/>
     </record>
     <record id="despido2" model="upobye.despidos">
       <field name="name">56000</field>
-      <field name="motivo">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
-      <field name="motivo_despido">baja indefinida</field>
       <field name="tipodespido_id" ref="tipodespido2"/>
     </record>
 
@@ -188,22 +182,17 @@
       <field name="proyecto_id" ref="proyecto0"/>
       <field name="tipo_contrato_id" ref="tipocontrato0"/>
       <field name="puesto_id" ref="puesto0"/>
-      <field name="baja_id" ref="baja0"/>
     </record>
     <record id="contrato1" model="upobye.contrato">
       <field name="sueldo">2000.00</field>
       <field name="dias_libres">30</field>
       <field name="proyecto_id" ref="proyecto1"/>
-      <field name="tipo_contrato_id" ref="tipocontrato1"/>
       <field name="puesto_id" ref="puesto1"/>
-      <field name="despido_id" ref="despido0"/>
     </record>
     <record id="contrato2" model="upobye.contrato">
       <field name="dias_libres">12</field>
       <field name="proyecto_id" ref="proyecto2"/>
-      <field name="tipo_contrato_id" ref="tipocontrato1"/>
       <field name="puesto_id" ref="puesto0"/>
-      <field name="despido_id" ref="despido1"/>
     </record> 
   </data>
 </odoo>
