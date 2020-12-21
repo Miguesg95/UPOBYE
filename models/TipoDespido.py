@@ -13,3 +13,5 @@ class TipoDespido(models.Model):
                                     ('objetivo','Objetivo'),
                                     ('colectivo','Colectivo')
                                     ],'Forma o tipo de despido')
+
+     despido_id = fields.Many2one('upobye.despidos', string="Despidos")

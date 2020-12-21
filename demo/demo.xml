@@ -135,31 +135,7 @@
       <field name="name">Sector Administrativo</field>
       <field name="description">Sector dedicado a la administración.</field>
     </record>
-    <record id="sector1" model="upobye.sector">
-      <field name="name">Sector Agrícola</field>
-      <field name="description">Sector dedicado a la agricultura.</field>
-    </record>
-    <record id="sector2" model="upobye.sector">
-      <field name="name">Sector de Transportes</field>
-      <field name="description">Sector dedicado al transporte.</field>
-    </record>
-    <record id="sector3" model="upobye.sector">
-      <field name="name">Sector Sanitario</field>
-      <field name="description">Sector dedicado a la sanidad.</field>
-    </record>
-    <record id="sector4" model="upobye.sector">
-      <field name="name">Sector Investigación</field>
-      <field name="description">Sector dedicado a la insvestigación.</field>
-    </record>
-
-    <!--Demo para Contrato-->
-    <record id="contrato0" model="upobye.contrato">
-      <field name="proyecto_id" ref="proyecto0"/>
-      <field name="tipo_contrato_id" ref="tipocontrato0"/>
-      <field name="puesto_id" ref="puesto0"/>
-    </record>
-    <!--Demo para despidos-->
-    <record id="despido0" model="upobye.despidos">
+    <record id<record id="despido0" model="upobye.despidos">
       <field name="name">Jubilación</field>
       <field name="description">El empleado pasa a ser desempleado para tramitar su jubilación</field>
       
@@ -173,7 +149,56 @@
       <field name="name">Baja Indefinida</field>
       <field name="description">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
     
+    </record>ame="name">Sector de Transportes</field>
+      <field name="description">Sector dedicado al transporte.</field>
     </record>
+    <record id="sector3" model="upobye.sector">
+      <field name="name">Sector Sanitario</field>
+      <field name="description">Sector dedicado a la sanidad.</field>
+    </record>
+    <record id="sector4" model="upobye.sector">
+      <field name="name">Sector Investigación</field>
+      <field name="description">Sector dedicado a la insvestigación.</field>
+    </record>
+         <!--Demo para tipo despidos-->
+    <record id="tipodespido0" model="upobye.tipodespido">
+      <field name="name">Nombre1</field>
+      <field name="forma">disciplinario</field>
+    </record>
+
+    <record id="tipodespido1" model="upobye.tipodespido">
+      <field name="name">Nombre2</field>
+      <field name="forma">objetivo</field>
+    </record>
+         
+    <record id="tipodespido2" model="upobye.tipodespido">
+      <field name="name">Nombre3</field>
+      <field name="forma">colectivo</field>
+    </record>
+      <!--Demo para despidos-->
+    <record id="despido0" model="upobye.despidos">
+      <field name="name">Jubilación</field>
+      <field name="description">El empleado pasa a ser desempleado para tramitar su jubilación</field>
+      <field name="tipodespido_id" ref="tipodespido0"/>
+    </record>
+    <record id="despido1" model="upobye.despidos">
+      <field name="name">FIn de Contrato</field>
+      <field name="description">El contrato ha llegado a su fecha fin</field>
+      <field name="tipodespido_id" ref="tipodespido1"/>
+    </record>
+    <record id="despido2" model="upobye.despidos">
+      <field name="name">Baja Indefinida</field>
+      <field name="description">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
+      <field name="tipodespido_id" ref="tipodespido2"/>
+    </record>
+
+    <!--Demo para Contrato-->
+    <record id="contrato0" model="upobye.contrato">
+      <field name="proyecto_id" ref="proyecto0"/>
+      <field name="tipo_contrato_id" ref="tipocontrato0"/>
+      <field name="puesto_id" ref="puesto0"/>
+    </record>
+    
   </data>
 </odoo>
 

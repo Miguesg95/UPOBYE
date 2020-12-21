@@ -12,6 +12,8 @@
             <field name="start" />
             <field name="end" />
             <field name="motivo_despido" />
+            <field name="contrato_id" widget="many2one"/>
+            <field name="tipodespido_id" widget="one2many"/>
           </group>
         </sheet>
       </form>
@@ -28,6 +30,8 @@
         <field name="start" />
         <field name="end" />
         <field name="motivo_despido" />
+        <field name="contrato_id" widget="many2one"/>
+        <field name="tipodespido_id" widget="one2many"/>
       </tree>
     </field>
   </record>
