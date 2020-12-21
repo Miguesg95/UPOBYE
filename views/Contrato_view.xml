@@ -6,12 +6,16 @@
       <form string="Contrato">
         <sheet layout="auto">
           <group>
-             <field name="sueldo" />
-             <field name="tipo_contrato_id" widget="many2one" />
-             <field name="baja_id" widget="one2many" />
-             <field name="despido_id" widget="one2many" />
-             <field name="puesto_id" widget="many2one" />
-             <field name="proyecto_id" widget="many2one" />
+            <field name="sueldo" />
+            <field name="jornada" />
+            <field name="dias_libres" />
+            <field name="tiempo" />
+            <field name="activo" />
+            <field name="baja_id" widget="one2many" />
+            <field name="despido_id" widget="one2many" />
+            <field name="tipo_contrato_id" widget="many2one" />
+            <field name="puesto_id" widget="many2one" />
+            <field name="proyecto_id" widget="many2one" />
           </group>
         </sheet>
       </form>
@@ -23,23 +27,27 @@
     <field name="model">upobye.contrato</field>
     <field name="arch" type="xml">
       <tree string="Contrato">
-         <field name="sueldo" />
-         <field name="tipo_contrato_id" widget="many2one" />
-         <field name="baja_id" widget="one2many" />
-         <field name="despido_id" widget="one2many" />
-         <field name="puesto_id" widget="many2one" />
-         <field name="proyecto_id" widget="many2one" />
+        <field name="sueldo" />
+        <field name="jornada" />
+        <field name="dias_libres" />
+        <field name="tiempo" />
+        <field name="activo" />
+        <field name="baja_id" widget="one2many" />
+        <field name="despido_id" widget="one2many" />
+        <field name="tipo_contrato_id" widget="many2one" />
+        <field name="puesto_id" widget="many2one" />
+        <field name="proyecto_id" widget="many2one" />
       </tree>
     </field>
   </record>
 
-   <record id="Contrato_list_action" model="ir.actions.act_window">
-      <field name="name">Contrato</field>
-      <field name="res_model">upobye.contrato</field>
-      <field name="view_mode">tree,form</field>
-      <field name="help" type="html">
-         <p class="o_view_nocontent_smiling_face">Create the first class</p>
-      </field>
-   </record> 
-   
+  <record id="Contrato_list_action" model="ir.actions.act_window">
+    <field name="name">Contrato</field>
+    <field name="res_model">upobye.contrato</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create the first class</p>
+    </field>
+  </record>
+
 </odoo>

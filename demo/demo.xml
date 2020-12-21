@@ -149,35 +149,36 @@
     </record>
 
     <!--Demo para tipo despidos-->
-    <record id="tipodespido0" model="upobye.tipodespido">
+    <record id="tipodespido0" model="upobye.tipo_despido">
       <field name="name">Nombre1</field>
       <field name="forma">disciplinario</field>
     </record>
-
-    <record id="tipodespido1" model="upobye.tipodespido">
+    <record id="tipodespido1" model="upobye.tipo_despido">
       <field name="name">Nombre2</field>
       <field name="forma">objetivo</field>
-    </record>
-         
-    <record id="tipodespido2" model="upobye.tipodespido">
+    </record>         
+    <record id="tipodespido2" model="upobye.tipo_despido">
       <field name="name">Nombre3</field>
       <field name="forma">colectivo</field>
     </record>
 
       <!--Demo para despidos-->
     <record id="despido0" model="upobye.despidos">
-      <field name="name">Jubilación</field>
-      <field name="description">El empleado pasa a ser desempleado para tramitar su jubilación</field>
+      <field name="name">2000</field>
+      <field name="motivo">El empleado pasa a ser desempleado para tramitar su jubilación</field>
+      <field name="motivo_despido">jubilación</field>
       <field name="tipodespido_id" ref="tipodespido0"/>
     </record>
     <record id="despido1" model="upobye.despidos">
-      <field name="name">FIn de Contrato</field>
-      <field name="description">El contrato ha llegado a su fecha fin</field>
+      <field name="name">40000</field>
+      <field name="motivo">El empleado pasa a ser desempleado para tramitar su jubilación</field>
+      <field name="motivo_despido">fin de contrato</field>
       <field name="tipodespido_id" ref="tipodespido1"/>
     </record>
     <record id="despido2" model="upobye.despidos">
-      <field name="name">Baja Indefinida</field>
-      <field name="description">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
+      <field name="name">56000</field>
+      <field name="motivo">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
+      <field name="motivo_despido">baja indefinida</field>
       <field name="tipodespido_id" ref="tipodespido2"/>
     </record>
 
