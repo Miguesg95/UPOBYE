@@ -11,4 +11,4 @@ from . import Puesto
 from . import TipoContrato
 from . import TipoDespido
 from . import Contrato
-#from . import Empleado
+from . import Empleado

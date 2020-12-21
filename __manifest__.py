@@ -37,6 +37,7 @@
         'views/TipoContrato_view.xml',
         'views/TipoDespido_view.xml',
         'views/Contrato_view.xml',
+        'viewa/Empleado_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode
