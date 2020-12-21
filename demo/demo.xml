@@ -135,32 +135,20 @@
       <field name="name">Sector Administrativo</field>
       <field name="description">Sector dedicado a la administración.</field>
     </record>
-    <record id<record id="despido0" model="upobye.despidos">
-      <field name="name">Jubilación</field>
-      <field name="description">El empleado pasa a ser desempleado para tramitar su jubilación</field>
-      
-    </record>
-    <record id="despido1" model="upobye.despidos">
-      <field name="name">FIn de Contrato</field>
-      <field name="description">El contrato ha llegado a su fecha fin</field>
-    
-    </record>
-    <record id="despido2" model="upobye.despidos">
-      <field name="name">Baja Indefinida</field>
-      <field name="description">Por tema de salud o laboral el empleado pasa a estar de baja indefinida</field>
-    
-    </record>ame="name">Sector de Transportes</field>
+    <record id="sector1" model="upobye.sector">
+      <field name="name">Sector de Transportes</field>
       <field name="description">Sector dedicado al transporte.</field>
     </record>
-    <record id="sector3" model="upobye.sector">
+    <record id="sector2" model="upobye.sector">
       <field name="name">Sector Sanitario</field>
       <field name="description">Sector dedicado a la sanidad.</field>
     </record>
-    <record id="sector4" model="upobye.sector">
+    <record id="sector3" model="upobye.sector">
       <field name="name">Sector Investigación</field>
       <field name="description">Sector dedicado a la insvestigación.</field>
     </record>
-         <!--Demo para tipo despidos-->
+
+    <!--Demo para tipo despidos-->
     <record id="tipodespido0" model="upobye.tipodespido">
       <field name="name">Nombre1</field>
       <field name="forma">disciplinario</field>
@@ -175,6 +163,7 @@
       <field name="name">Nombre3</field>
       <field name="forma">colectivo</field>
     </record>
+
       <!--Demo para despidos-->
     <record id="despido0" model="upobye.despidos">
       <field name="name">Jubilación</field>
@@ -194,11 +183,27 @@
 
     <!--Demo para Contrato-->
     <record id="contrato0" model="upobye.contrato">
+      <field name="dias_libres">40</field>
       <field name="proyecto_id" ref="proyecto0"/>
       <field name="tipo_contrato_id" ref="tipocontrato0"/>
       <field name="puesto_id" ref="puesto0"/>
+      <field name="baja_id" ref="baja0"/>
     </record>
-    
+    <record id="contrato1" model="upobye.contrato">
+      <field name="sueldo">2000.00</field>
+      <field name="dias_libres">30</field>
+      <field name="proyecto_id" ref="proyecto1"/>
+      <field name="tipo_contrato_id" ref="tipocontrato1"/>
+      <field name="puesto_id" ref="puesto1"/>
+      <field name="despido_id" ref="despido0"/>
+    </record>
+    <record id="contrato2" model="upobye.contrato">
+      <field name="dias_libres">12</field>
+      <field name="proyecto_id" ref="proyecto2"/>
+      <field name="tipo_contrato_id" ref="tipocontrato1"/>
+      <field name="puesto_id" ref="puesto0"/>
+      <field name="despido_id" ref="despido1"/>
+    </record> 
   </data>
 </odoo>
 
