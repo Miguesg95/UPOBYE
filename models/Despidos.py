@@ -10,8 +10,8 @@ class Despidos(models.Model):
 
      name = fields.Integer(string="Finiquito",required=True,help="Indemnización")
      motivo = fields.Text()
-     start = fields.Datetime('Starts', required=True)
-     end = fields.Datetime('Ends', required=True)
+     start = fields.Datetime('Starts', required=True, default=fields.Date.today())
+     end = fields.Datetime('Ends', required=True, default=fields.Date.today())
      motivo_despido = fields.Selection([('jubilacion','Jubilación'),
                                     ('fin de contrato','Fin de contrato'),
                                     ('baja indefinida','Baja indefinida')
