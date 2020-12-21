@@ -1,5 +1,5 @@
 <odoo>
-    <template id="upobye_despidos_template">
+    <template id="report_despido">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
                 <t t-call="web.external_layout">                    <!-- Probad tambien con web.internal_layout -->
@@ -36,47 +36,47 @@
                             </div>
                         </div>
                         <div t-if="o.contrato_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
-                            Datos del contrato <span t-field="o.contrato_id" />
-                        <table style="background-color: light-gray border-collapse: collapse" class="table">
-                            <thead>
-                                <tr>
-                                    <th>Sueldo</th>
-                                    <th>Jornada</th>
-                                    <th>Fecha de comienzo</th>
-                                    <th>Tiempo de duración</th>
-                                    <th>Activo:</th>
-                                    <th>Empleado afectado </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <t t-foreach="o.contrato_id" t-as="contrato">
+                            Datos del contrato <span t-field="o.contrato_id"></span>
+                            <table style="background-color: light-gray border-collapse: collapse" class="table">
+                                <thead>
                                     <tr>
-                                        <td>
-                                            <p t-field="contrato.sueldo" />
-                                        </td>
-                                        <td>
-                                            <p t-field="contrato.jornada" />
-                                        </td>
-                                        <td>
-                                            <p t-field="contrato.fecha" />
-                                        </td>
-                                        <td>
-                                            <p t-field="contrato.tiempo" />
-                                        </td>
-                                        <td>
-                                            <p t-field="contrato.activo" />
-                                        </td>
-                                        <td>
-                                            <p t-field="contrato.empleado_id" />
-                                        </td>
+                                        <th>Sueldo</th>
+                                        <th>Jornada</th>
+                                        <th>Fecha de comienzo</th>
+                                        <th>Tiempo de duración</th>
+                                        <th>Activo:</th>
+                                        <th>Empleado afectado </th>
                                     </tr>
-                                </t>
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.contrato_id" t-as="contrato">
+                                        <tr>
+                                            <td>
+                                                <p t-field="contrato.sueldo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.jornada" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.fecha" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.tiempo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.activo" />
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.empleado_id" />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
+                </t>
             </t>
         </t>
-    </t>
-</template>
+    </template>
 </odoo>
