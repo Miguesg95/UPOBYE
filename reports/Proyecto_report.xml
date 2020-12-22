@@ -12,7 +12,7 @@
                             <div class="col-xs-8" style="text-align: left; margin: auto; padding-left: 15px; padding-top: 10px;">
                             </div>
                         </div>
-                        <div t-if="o.sectores.id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
+                        <div t-if="o.sectores_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
                             Datos del contrato <span t-field="o.contrato_id"></span>
                             <table style="background-color: light-gray border-collapse: collapse" class="table">
                                 <thead>
@@ -35,7 +35,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div t-if="o.contrato.id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
+                        <div t-if="o.contrato_id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
                             Datos del contrato <span t-field="o.contrato_id"></span>
                             <table style="background-color: light-gray border-collapse: collapse" class="table">
                                 <thead>
@@ -48,7 +48,7 @@
                                     <t t-foreach="o.contrato_id" t-as="contrato">
                                         <tr>
                                             <td>
-                                                <t t-foreach="o.empleado_id" t-as="empleado">
+                                                <t t-foreach="contrato.empleado_id" t-as="empleado">
                                                     <p t-field="empleado.name" />
                                                 </t>
                                             </td>
