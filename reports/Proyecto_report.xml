@@ -22,7 +22,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <t t-foreach="o.sectores_id" t-as="contrato">
+                                    <t t-foreach="o.sectores_id" t-as="sector">
                                         <tr>
                                             <td>
                                                 <p t-field="sector.name" />
@@ -48,7 +48,7 @@
                                     <t t-foreach="o.contrato_id" t-as="contrato">
                                         <tr>
                                             <td>
-                                                <t t-foreach="o.empleado_id" t-as="contrato">
+                                                <t t-foreach="o.empleado_id" t-as="empleado">
                                                     <p t-field="empleado.name" />
                                                 </t>
                                             </td>
