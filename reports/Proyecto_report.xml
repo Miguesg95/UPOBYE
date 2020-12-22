@@ -1,0 +1,68 @@
+<odoo>
+    <template id="report_proyecto">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">                    <!-- Probad tambien con web.internal_layout -->
+                    <div class="page">
+                        <div class="oe_structure" />
+                        <div class="row" style="font-size: 24px; margin-bottom: 20px;">
+                            <span style="font-weight: bold; text-decoration: underline; ">Informacion del proyecto:</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8" style="text-align: left; margin: auto; padding-left: 15px; padding-top: 10px;">
+                            </div>
+                        </div>
+                        <div t-if="o.sectores.id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
+                            Datos del contrato <span t-field="o.contrato_id"></span>
+                            <table style="background-color: light-gray border-collapse: collapse" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Descripcion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.sectores_id" t-as="contrato">
+                                        <tr>
+                                            <td>
+                                                <p t-field="sector.name" />
+                                            </td>
+                                            <td>
+                                                <p t-field="sector.description" />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div t-if="o.contrato.id" class="row" style="margin-top: 40px; font-weight: bold; font-size: 19px;">
+                            Datos del contrato <span t-field="o.contrato_id"></span>
+                            <table style="background-color: light-gray border-collapse: collapse" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>sueldo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.contrato_id" t-as="contrato">
+                                        <tr>
+                                            <td>
+                                                <t t-foreach="o.empleado_id" t-as="contrato">
+                                                    <p t-field="empleado.name" />
+                                                </t>
+                                            </td>
+                                            <td>
+                                                <p t-field="contrato.sueldo" />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
