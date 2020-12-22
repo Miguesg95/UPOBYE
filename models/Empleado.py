@@ -15,7 +15,7 @@ class Empleado(models.Model):
     cuentaBancaria = fields.Char(String='Número de cuenta bancaria', size=200)
 
     experiencia_id = fields.One2many('upobye.experiencia', 'empleado_id', 'Experiencias')
-    titulación_id= fields.One2many('upobye.titulacion', 'empleado_id', 'Titulaciones')
+    titulacion_id= fields.One2many('upobye.titulacion', 'empleado_id', 'Titulaciones')
     idioma_id= fields.One2many('upobye.idioma', 'empleado_id', 'Idiomas')
     contrato_id = fields.One2many('upobye.contrato', 'empleado_id', 'Contratos')
     
