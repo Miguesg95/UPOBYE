@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
+
+    <record id="empleado0" model="upobye.empleado">
+      <field name="name">36327872Q</field>
+      <field name="nomEmpleado">Cayo Julio Cesar</field>
+      <field name="telefono">632356254</field>
+      <field name="nSeguridadSocial">256254125</field>
+      <field name="correo">cesjulcay@upo.es</field>
+      <field name="cuentaBancaria">ES0620386193062536853141</field>
+    </record>
+
+    <record id="empleado0" model="upobye.empleado">
+      <field name="name">55263616K</field>
+      <field name="nomEmpleado">Marco Junio Bruto</field>
+      <field name="telefono">652363254</field>
+      <field name="nSeguridadSocial">485264645</field>
+      <field name="correo">brujunmar@upo.es</field>
+      <field name="cuentaBancaria">ES2120385458333398926619</field>
+    </record>
+
     <!-- Puesto y Tipo Contrato-->
     <record id="puesto0" model="upobye.puesto">
       <field name="name">Ceo</field>
