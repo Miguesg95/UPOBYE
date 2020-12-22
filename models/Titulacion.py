@@ -8,3 +8,5 @@ class Titulacion(models.Model):
      
      name = fields.Char(string="Nombre", required=True, help="Nombre")
      certificacion = fields.Char(string="Certificado por",required=True,help="Nombre de la identidad que certifica la titulacion")
+
+     empleado_id = fields.Many2one('upobye.empleado', string='Empleado')

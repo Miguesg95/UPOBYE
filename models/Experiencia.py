@@ -17,6 +17,8 @@ class Experiencia(models.Model):
         ('media', 'Media'),
     ],string="Jornada", default='completa', help="Horas de duración de la jornada laboral")
 
+    empleado_id = fields.Many2one('upobye.empleado', string='Empleado')
+
     @api.constrains('fechaInicio')
     def _fechas_baja(self):
         self.write({'fechaFin' : self.fechaInicio + timedelta(days=self.duracionDias)})
