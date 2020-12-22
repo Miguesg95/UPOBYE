@@ -11,7 +11,7 @@
       <field name="cuentaBancaria">ES0620386193062536853141</field>
     </record>
 
-    <record id="empleado0" model="upobye.empleado">
+    <record id="empleado1" model="upobye.empleado">
       <field name="name">55263616K</field>
       <field name="nomEmpleado">Marco Junio Bruto</field>
       <field name="telefono">652363254</field>
@@ -51,44 +51,54 @@
     <record id="idioma0" model="upobye.idioma">
       <field name="name">Ingles</field>
       <field name="certificacion">Oxford</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="idioma1" model="upobye.idioma">
       <field name="name">Ingles</field>
       <field name="certificacion">Cambridge</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="idioma2" model="upobye.idioma">
       <field name="name">Frances</field>
       <field name="certificacion">DELF</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
     <record id="idioma3" model="upobye.idioma">
       <field name="name">Italiano</field>
       <field name="certificacion">PLIDA</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
     <record id="idioma4" model="upobye.idioma">
       <field name="name">Chino</field>
       <field name="certificacion">HSK</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
 
     <!--Demo para Titulacion-->
     <record id="titulo0" model="upobye.titulacion">
       <field name="name">Ingenieria informatica</field>
       <field name="certificacion">US</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="titulo1" model="upobye.titulacion">
       <field name="name">Ingenieria informatica</field>
       <field name="certificacion">UPO</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="titulo2" model="upobye.titulacion">
       <field name="name">Grado medio Sistemas microinformaticos</field>
       <field name="certificacion">I.E.S. Cristóbal de Monroy</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="titulo3" model="upobye.titulacion">
       <field name="name">Grado superior en  Informática y Comunicaciones</field>
       <field name="certificacion"> I.E.S. Abdera</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
     <record id="titulo4" model="upobye.titulacion">
       <field name="name">Grado superior DAM</field>
       <field name="certificacion">I.E.S. Nervión</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
 
     <!--Demo para Experiencia-->
@@ -96,16 +106,19 @@
       <field name="name">Churrero</field>
       <field name="certificacion">Churrería Hermanos Pernía</field>
       <field name="duracionDias">25</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="experiencia1" model="upobye.experiencia">
       <field name="name">Camarero</field>
       <field name="certificacion">Cafetería UPO</field>
       <field name="duracionDias">40</field>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="experiencia2" model="upobye.experiencia">
       <field name="name">Profesor</field>
       <field name="certificacion">UPO</field>
       <field name="duracionDias">70</field>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
 
     <!--Demo para proyecto-->
@@ -156,6 +169,7 @@
       <field name="proyecto_id" ref="proyecto0"/>
       <field name="tipo_contrato_id" ref="tipocontrato0"/>
       <field name="puesto_id" ref="puesto0"/>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
     <record id="contrato1" model="upobye.contrato">
       <field name="sueldo">2000.00</field>
@@ -164,12 +178,14 @@
       <field name="proyecto_id" ref="proyecto1"/>
       <field name="tipo_contrato_id" ref="tipocontrato1"/>
       <field name="puesto_id" ref="puesto1"/>
+      <field name="empleado_id" ref="empleado1"/>
     </record>
     <record id="contrato2" model="upobye.contrato">
       <field name="dias_libres">12</field>
       <field name="proyecto_id" ref="proyecto2"/>
       <field name="tipo_contrato_id" ref="tipocontrato0"/>
       <field name="puesto_id" ref="puesto1"/>
+      <field name="empleado_id" ref="empleado0"/>
     </record>
 
     <!--Demo para Baja-->
