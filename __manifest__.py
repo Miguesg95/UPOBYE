@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
@@ -38,7 +38,7 @@
         'views/TipoContrato_view.xml',
         'views/TipoDespido_view.xml',
         'views/Contrato_view.xml',
-        'views/Empleado_view.xml',
+        #'views/Empleado_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode

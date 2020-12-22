@@ -142,12 +142,14 @@
       <field name="sueldo">2000.00</field>
       <field name="dias_libres">30</field>
       <field name="proyecto_id" ref="proyecto1"/>
+      <field name="tipo_contrato_id" ref="tipocontrato1"/>
       <field name="puesto_id" ref="puesto1"/>
     </record>
     <record id="contrato2" model="upobye.contrato">
       <field name="dias_libres">12</field>
       <field name="proyecto_id" ref="proyecto2"/>
-      <field name="puesto_id" ref="puesto0"/>
+      <field name="tipo_contrato_id" ref="tipocontrato0"/>
+      <field name="puesto_id" ref="puesto1"/>
     </record>
 
     <!--Demo para Baja-->
