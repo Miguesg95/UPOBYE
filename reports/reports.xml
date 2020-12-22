@@ -1,4 +1,4 @@
 <odoo>
     <report id="action_upobye_despidos_report" string="Report" model="upobye.despidos" report_type="qweb-pdf" name="upobye.report_despido" />
-    <report id="action_upobye_proyecto_report" string="Report" model="upobye.proycto" report_type="qweb-pdf" name="upobye.upobye_proyecto_template" />
+    <report id="action_upobye_proyecto_report" string="Report" model="upobye.proyecto" report_type="qweb-pdf" name="upobye.upobye_proyecto_template" />
 </odoo>
