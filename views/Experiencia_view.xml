@@ -12,9 +12,7 @@
             <field name="fechaFin" />
             <field name="duracionDias" />
             <field name="jornada" />
-            <!-- 
-            <field name="Experiencia" widget="many2one" />
-            -->
+            <field name="empleado_id" widget="many2one"/>
           </group>
         </sheet>
       </form>
@@ -32,6 +30,7 @@
         <field name="fechaFin" />
         <field name="duracionDias" />
         <field name="jornada" />
+        <field name="empleado_id" widget="many2one"/>
       </tree>
     </field>
   </record>
