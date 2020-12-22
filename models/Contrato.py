@@ -13,7 +13,7 @@ class Contrato(models.Model):
     fecha = fields.Datetime(string = "Fecha de inicio", default=fields.Date.today()) 
     dias_libres = fields.Integer(string = "Días libres")
     tiempo = fields.Datetime(string = "Fecha de cumplimiento del contrato", help="Fecha de cumplimiento de contrato")
-    activo = fields.Boolean(string="Activo", help="Indica si el empleado se encuentra activo")
+    activo = fields.Boolean(string="Activo", default=True, help="Indica si el empleado se encuentra activo")
 
     baja_id = fields.One2many('upobye.baja', 'contrato_id', 'Bajas')
     despido_id = fields.One2many('upobye.despidos', 'contrato_id', 'Despidos')

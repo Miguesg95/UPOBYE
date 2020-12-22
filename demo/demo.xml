@@ -141,6 +141,7 @@
     <record id="contrato1" model="upobye.contrato">
       <field name="sueldo">2000.00</field>
       <field name="dias_libres">30</field>
+      <field name="activo">False</field>
       <field name="proyecto_id" ref="proyecto1"/>
       <field name="tipo_contrato_id" ref="tipocontrato1"/>
       <field name="puesto_id" ref="puesto1"/>
