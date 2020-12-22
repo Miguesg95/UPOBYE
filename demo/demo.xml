@@ -89,23 +89,6 @@
       <field name="duracionDias">70</field>
     </record>
 
-    <!--Demo para Baja-->
-    <record id="baja0" model="upobye.baja">
-      <field name="name">empleado0</field>
-      <field name="duracionDias">5</field>
-      <field name="motivoBaja">Se cayó jugando.</field>
-    </record>
-    <record id="baja1" model="upobye.baja">
-      <field name="name">empleado1</field>
-      <field name="duracionDias">13</field>
-      <field name="motivoBaja">Se marchó y a su barco lo llamó libertad.</field>
-    </record>
-    <record id="baja2" model="upobye.baja">
-      <field name="name">empleado2</field>
-      <field name="duracionDias">10</field>
-      <field name="motivoBaja">Ha salido un juego nuevo.</field>
-    </record>
-
     <!--Demo para proyecto-->
     <record id="proyecto0" model="upobye.proyecto">
       <field name="name">Proyecto UPOBYE</field>
@@ -148,6 +131,45 @@
       <field name="description">Sector dedicado a la insvestigación.</field>
     </record>
 
+    <!--Demo para Contrato-->
+    <record id="contrato0" model="upobye.contrato">
+      <field name="dias_libres">40</field>
+      <field name="proyecto_id" ref="proyecto0"/>
+      <field name="tipo_contrato_id" ref="tipocontrato0"/>
+      <field name="puesto_id" ref="puesto0"/>
+    </record>
+    <record id="contrato1" model="upobye.contrato">
+      <field name="sueldo">2000.00</field>
+      <field name="dias_libres">30</field>
+      <field name="proyecto_id" ref="proyecto1"/>
+      <field name="puesto_id" ref="puesto1"/>
+    </record>
+    <record id="contrato2" model="upobye.contrato">
+      <field name="dias_libres">12</field>
+      <field name="proyecto_id" ref="proyecto2"/>
+      <field name="puesto_id" ref="puesto0"/>
+    </record>
+
+    <!--Demo para Baja-->
+    <record id="baja0" model="upobye.baja">
+      <field name="name">empleado0</field>
+      <field name="duracionDias">5</field>
+      <field name="motivoBaja">Se cayó jugando.</field>
+      <field name="contrato_id" ref="contrato0"/>
+    </record>
+    <record id="baja1" model="upobye.baja">
+      <field name="name">empleado1</field>
+      <field name="duracionDias">13</field>
+      <field name="motivoBaja">Se marchó y a su barco lo llamó libertad.</field>
+      <field name="contrato_id" ref="contrato2"/>
+    </record>
+    <record id="baja2" model="upobye.baja">
+      <field name="name">empleado2</field>
+      <field name="duracionDias">10</field>
+      <field name="motivoBaja">Ha salido un juego nuevo.</field>
+      <field name="contrato_id" ref="contrato2"/>
+    </record>
+
     <!--Demo para tipo despidos-->
     <record id="tipodespido0" model="upobye.tipo_despido">
       <field name="name">Nombre1</field>
@@ -170,30 +192,12 @@
     <record id="despido1" model="upobye.despidos">
       <field name="name">40000</field>
       <field name="tipodespido_id" ref="tipodespido1"/>
+      <field name="contrato_id" ref="contrato1"/>
     </record>
     <record id="despido2" model="upobye.despidos">
       <field name="name">56000</field>
       <field name="tipodespido_id" ref="tipodespido2"/>
     </record>
-
-    <!--Demo para Contrato-->
-    <record id="contrato0" model="upobye.contrato">
-      <field name="dias_libres">40</field>
-      <field name="proyecto_id" ref="proyecto0"/>
-      <field name="tipo_contrato_id" ref="tipocontrato0"/>
-      <field name="puesto_id" ref="puesto0"/>
-    </record>
-    <record id="contrato1" model="upobye.contrato">
-      <field name="sueldo">2000.00</field>
-      <field name="dias_libres">30</field>
-      <field name="proyecto_id" ref="proyecto1"/>
-      <field name="puesto_id" ref="puesto1"/>
-    </record>
-    <record id="contrato2" model="upobye.contrato">
-      <field name="dias_libres">12</field>
-      <field name="proyecto_id" ref="proyecto2"/>
-      <field name="puesto_id" ref="puesto0"/>
-    </record> 
   </data>
 </odoo>
 
